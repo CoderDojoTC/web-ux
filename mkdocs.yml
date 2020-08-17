@@ -1,0 +1,78 @@
+site_name: 'CoderDojo TC Python'
+nav:
+  - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
+  - Beginning Python - Trinket:
+    - Introduction: trinket/00-introduction.md
+    - Trinket Account: trinket/01-turtle-graphics.md
+    - Turtle Square: trinket/02-simple-square.md
+    - Variables: trinket/03-variables.md
+    - Loops: trinket/04-loops.md
+    - Conditional: trinket/05-conditionals.md
+    - Functions: trinket/06-functions.md
+    - Flower: trinket/07-flower.md
+    - Function Parameters: trinket/07-function-parameters.md
+    - Lists: trinket/08-list.md
+    - Random Numbers: trinket/08-random.md
+    - Random Stars: trinket/13-random-stars.md
+    - Input: trinket/11-input.md
+    - Recursion: trinket/12-recursion.md
+  - Beginning Python - Repl.it:
+    - Square: repl/02-square.md
+    - Flower: repl/07-flower.md
+    - Recursion: repl/12-recursion.md
+  - Intermediate Python:
+    - Variables and Scope: intermediate/01-variables-scope.md
+    - Data Types: intermediate/02-data-types.md
+    - Data Types & Function Parameters: intermediate/03-data-type-validation.md
+    - Maps: intermediate/04-maps.md
+    - Files: intermediate/files.md
+    - Images: intermediate/images.md
+    - Regular Expressions: intermediate/regex.md
+    - Dir: intermediate/dir.md
+    - Modules: intermediate/modules.md
+    - Debugging: intermediate/debugging.md
+    - Maze Solving with BFS: intermediate/bfsMaze.md
+    - Maze Solving with DFS: intermediate/dfsMaze.md
+  - Jupyter:
+    - Setup Turtle on Jupyter: jupyter/01-setup.md
+    - Drawing Box Labs: jupyter/02-draw-box.md
+    - Drawing Figure: jupyter/02-draw-figure.md
+    - Setup Canvas on Jupyter Lab: jupyter/02-canvas-setup.md
+    - Canvas Color Bars: jupyter/20-canvas-color-bars.md
+  - Pi:
+    - Python on Raspberry Pi: pi/01-intro.md
+  - Advanced Python:
+    - Stock Ticker Analysis: advanced/stocks.md
+    - MNIST Digit Prediction: advanced/mnist.md
+    
+  - Contributing:
+    - How to Contribute Examples: contribute.md
+  - Contact:
+    - Contact: contact.md
+
+site_description: 'Resources for teaching Python to CoderDojo Twin Cities students.'
+site_author: 'Dan McCreary'
+repo_name: 'python'
+repo_url: 'https://github.com/CoderDojoTC/python'
+edit_uri: 'blob/master/docs'
+theme:
+  name: material
+  logo: img/coderdojo-logo.png
+  palette:
+    primary: '#642580'
+    accent: '#41BAC1'
+  feature:
+    tabs: true
+  custom_dir: 'theme'
+  include_sidebar: true
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+  - codehilite:
+      linenums: true
+plugins:
+    - search
+markdown_extensions:
+  - codehilite
