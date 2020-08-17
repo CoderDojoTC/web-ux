@@ -2,7 +2,7 @@ site_name: 'CoderDojo TC Web-UX'
 nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Home: index.md
-  - Learning Objectives: learning-objectives.md
+  - Learning Objectives: leaning-objectives.md
   - Contact: contact.md
 
 site_description: 'Resources for teaching Web and UX to CoderDojo Twin Cities students.'
