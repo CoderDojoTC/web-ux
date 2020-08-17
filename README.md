@@ -1,6 +1,8 @@
 
 Welcome to the Web/User Experience repository for teachers and mentors.
 
+Our documentation site is [here](http://www.coderdojotc.org/web-ux/).
+
 # Mozilla course materials:
 
 HTML: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started
