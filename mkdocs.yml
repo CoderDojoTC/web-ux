@@ -8,6 +8,7 @@ nav:
     - Introduction: svg/01-intro.md
     - Circle: svg/02-circle.md
   - Learning Objectives: leaning-objectives.md
+  - Resources: resources.md
   - Contact: contact.md
 
 site_description: 'Resources for teaching Web and UX to CoderDojo Twin Cities students.'
