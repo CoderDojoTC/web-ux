@@ -2,6 +2,11 @@ site_name: 'CoderDojo TC Web-UX'
 nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Home: index.md
+  - Intoduction to HTML:
+    - Introduction: intro-to-html/01-intro.md
+  - Web Drawing with SVG:
+    - Introduction: svg/01-intro.md
+    - Circle: svg/02-circle.md
   - Learning Objectives: leaning-objectives.md
   - Contact: contact.md
 
