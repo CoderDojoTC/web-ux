@@ -19,7 +19,7 @@
     
     
       
-        <title>Introduction - CoderDojo TC Web-UX</title>
+        <title>Rectangle - CoderDojo TC Web-UX</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-html" class="md-skip">
+        <a href="#drawing-rectangles-with-svg" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Introduction
+              Rectangle
             
           </span>
         </div>
@@ -210,12 +210,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Intoduction to HTML
@@ -237,20 +235,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Introduction" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../intro-to-html/01-intro/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
-    
   </li>
 
         
@@ -263,10 +252,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Web Drawing with SVG
@@ -290,7 +281,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../svg/01-intro/" title="Introduction" class="md-nav__link">
+    <a href="../01-intro/" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -302,7 +293,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../svg/02-circle/" title="Circle" class="md-nav__link">
+    <a href="../02-circle/" title="Circle" class="md-nav__link">
       Circle
     </a>
   </li>
@@ -314,7 +305,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../svg/03-line/" title="Line" class="md-nav__link">
+    <a href="../03-line/" title="Line" class="md-nav__link">
       Line
     </a>
   </li>
@@ -324,11 +315,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../svg/04-rectangle/" title="Rectangle" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Rectangle" class="md-nav__link md-nav__link--active">
       Rectangle
     </a>
+    
   </li>
 
         
@@ -338,7 +338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../svg/05-ellipse/" title="Ellipse" class="md-nav__link">
+    <a href="../05-ellipse/" title="Ellipse" class="md-nav__link">
       Ellipse
     </a>
   </li>
@@ -412,7 +412,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/intro-to-html/01-intro.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/svg/04-rectangle.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -420,9 +420,18 @@
                   
                 
                 
-                <h1 id="introduction-to-html">Introduction to HTML</h1>
-<h1 id="github">GitHub</h1>
-<p>https://lab.github.com/githubtraining/introduction-to-html</p>
+                <h1 id="drawing-rectangles-with-svg">Drawing Rectangles with SVG</h1>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;200&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">rect</span> <span class="na">x</span><span class="o">=</span><span class="s">&quot;10&quot;</span> <span class="na">y</span><span class="o">=</span><span class="s">&quot;20&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;150&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> 
+        <span class="na">fill</span><span class="o">=</span><span class="s">&quot;lightblue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="err">;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;purple&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+
+
+<p>This example will generate the following rectangle:</p>
+<p><svg height="200" width="200">
+  <rect x="10" y="20" width="150" height="100" fill="lightblue" stroke-width="6"; stroke="purple" />
+</svg></p>
                 
               
               
@@ -441,7 +450,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../.." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../03-line/" title="Line" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -450,19 +459,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Home
+                  Line
                 </span>
               </div>
             </a>
           
           
-            <a href="../../svg/01-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../05-ellipse/" title="Ellipse" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Introduction
+                  Ellipse
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
