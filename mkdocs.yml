@@ -7,6 +7,9 @@ nav:
   - Web Drawing with SVG:
     - Introduction: svg/01-intro.md
     - Circle: svg/02-circle.md
+    - Line: svg/03-line.md
+    - Rectangle: svg/04-rectangle.md
+    - Ellipse: svg/05-ellipse.md
   - Learning Objectives: leaning-objectives.md
   - Resources: resources.md
   - Contact: contact.md

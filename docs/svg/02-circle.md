@@ -21,7 +21,7 @@ That is kind of a dark circle.  Let's fill in the circle with blue and make the 
 
 ```html
 <svg height="100" width="100">
-  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="blue" />
+  <circle cx="50" cy="50" r="40" stroke="red" stroke-width="4" fill="blue" />
 </svg>
 ```
 

@@ -6,8 +6,8 @@
 2. HTML Template for testing SVG
 3. SVG Circle
 4. SVG Line
-5. SVG Ellipse
-6. SVG Rectangle
+5. SVG Rectangle
+6. SVG Ellipse
 7. SVG Polygon
 8. SVG Polyline
 9. SVG Path
