@@ -4,6 +4,13 @@ nav:
   - Home: index.md
   - Intoduction to HTML:
     - Introduction: intro-to-html/01-intro.md
+    - HTML File Structure: intro-to-html/02-html-structure.md
+    - Bold and Italic: intro-to-html/03-bold-italic.md
+    - Lists: intro-to-html/04-lists.md
+    - Links: intro-to-html/05-links.md
+    - Images: intro-to-html/06-images.md
+    - Tables: intro-to-html/07-tables.md
+    - Forms: intro-to-html/08-forms.md
   - Web Drawing with SVG:
     - Introduction: svg/01-intro.md
     - Circle: svg/02-circle.md
