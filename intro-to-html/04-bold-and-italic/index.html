@@ -282,9 +282,62 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Bold and Italic
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Bold and Italic" class="md-nav__link md-nav__link--active">
       Bold and Italic
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#other-inline-elements" class="md-nav__link">
+    Other Inline Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Inline Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#superscripts" class="md-nav__link">
+    Superscripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscripts" class="md-nav__link">
+    Subscripts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -497,6 +550,43 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#other-inline-elements" class="md-nav__link">
+    Other Inline Elements
+  </a>
+  
+    <nav class="md-nav" aria-label="Other Inline Elements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#superscripts" class="md-nav__link">
+    Superscripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subscripts" class="md-nav__link">
+    Subscripts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -530,6 +620,46 @@
 </p></p>
 <p>!!! Warning
      You must remember to close the bold and italic markup.  They don't just apply to a single world.  Make sure you close the elements in the reverse order that you added them.</p>
+<h2 id="other-inline-elements">Other Inline Elements</h2>
+<p>There are two other interesting inline elements that you might want to use.  One is for creating superscripts and one is for subscripts.</p>
+<h3 id="superscripts">Superscripts</h3>
+<p>To make text appear shifted up we use the <code>&lt;sub&gt;</code> tag.
+Here we use it in a mathematical formula to show an exponent:</p>
+<pre><code class="html">&lt;p&gt;y = x&lt;sup&gt;2&lt;/sup&gt; + 2x + 1&lt;p&gt;
+</code></pre>
+
+<p>which will render:
+<p>y = x<sup>2</sup> + 2x + 1<p></p>
+<p>You can also use some greek letters if you know how to encode them.  Here the greek letter "pi" is references using <code>&amp;pi;</code></p>
+<pre><code class="html">&lt;p&gt;The formula:&lt;br/&gt;
+   e&lt;sup&gt;i&amp;pi;&lt;/sup&gt;= -1&lt;br/&gt;
+is one of the most elegent formulas in mathematics
+&lt;/p&gt;
+</code></pre>
+
+<p>The formula:<br/>
+   e<sup>i&pi;</sup>= -1<br/>
+is one of the most elegent formulas in mathematics
+</p>
+
+<h3 id="subscripts">Subscripts</h3>
+<pre><code class="html">&lt;p&gt;The chemical formula for water is
+   H&lt;sub&gt;2&lt;/sub&gt;O
+&lt;/p&gt;
+</code></pre>
+
+<p>The chemical formula for water is
+   H<sub>2</sub>O
+</p>
+
+<pre><code class="html">&lt;p&gt;The chemical formula for caffeine is
+   C&lt;sub&gt;8&lt;/sub&gt;H&lt;sub&gt;10&lt;/sub&gt;N&lt;sub&gt;4&lt;/sub&gt;O&lt;sub&gt;2&lt;/sub&gt;
+&lt;/p&gt;
+</code></pre>
+
+<p>The chemical formula for caffeine is
+   C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub>
+</p>
                 
               
               
