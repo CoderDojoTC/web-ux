@@ -8,8 +8,8 @@ nav:
     - Headings: intro-to-html/03-headings.md
     - Bold and Italic: intro-to-html/04-bold-and-italic.md
     - Lists: intro-to-html/05-lists.md
-    - Links: intro-to-html/06-links.md
-    - Images: intro-to-html/07-images.md
+    - Images: intro-to-html/06-images.md
+    - Links: intro-to-html/07-links.md
     - Tables: intro-to-html/08-tables.md
     - Forms: intro-to-html/09-forms.md
   - Web Drawing with SVG:
@@ -39,6 +39,7 @@ theme:
   include_sidebar: true
 markdown_extensions:
   - admonition
+  - attr_list
   - footnotes
   - toc:
       permalink: true
