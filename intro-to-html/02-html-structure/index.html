@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#introduction-to-html" class="md-skip">
+        <a href="#html-file-structure-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -258,9 +258,70 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        HTML File Structure
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="HTML File Structure" class="md-nav__link md-nav__link--active">
       HTML File Structure
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-template" class="md-nav__link">
+    Getting Started Template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doctype" class="md-nav__link">
+    DOCTYPE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    html
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    body
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -497,6 +558,51 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#getting-started-template" class="md-nav__link">
+    Getting Started Template
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doctype" class="md-nav__link">
+    DOCTYPE
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#html" class="md-nav__link">
+    html
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#head" class="md-nav__link">
+    head
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#body" class="md-nav__link">
+    body
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -515,8 +621,32 @@
                   
                 
                 
-                <h1 id="introduction-to-html">Introduction to HTML</h1>
-<h1 id="github">GitHub</h1>
+                <h1 id="html-file-structure-structure">HTML File Structure Structure</h1>
+<h2 id="getting-started-template">Getting Started Template</h2>
+<p>Here is a standard template we will be using for our example programs.</p>
+<div class="codehilite"><pre><span></span><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;utf-8&quot;</span><span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>A simple HTML document<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Hello World!<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+   <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+
+
+<h2 id="doctype">DOCTYPE</h2>
+<p>There are many varieties of HTML files.  This line indicates that
+this file conforms to the most common modern format HTML5.</p>
+<h2 id="html">html</h2>
+<p>This is the root element.  The begin tag should be the second line of the file and the end tag the last line of the file.  The html element contains two parts.  The first is the head that hold the title and data about the content and the body has the page content itself.</p>
+<h2 id="head">head</h2>
+<p>The head element contains information about the page content.  This includes the page title that appears on the browser tab.  It is a good best practice to pick a short but descriptive page title.</p>
+<h2 id="body">body</h2>
+<p>The body element contains the page content itself.</p>
+<h1 id="github-course">GitHub Course</h1>
 <p>https://lab.github.com/githubtraining/introduction-to-html</p>
                 
               
