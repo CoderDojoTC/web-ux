@@ -11,7 +11,7 @@ nav:
     - Links: intro-to-html/06-links.md
     - Images: intro-to-html/07-images.md
     - Tables: intro-to-html/08-tables.md
-    - Forms: intro-to-html/08-forms.md
+    - Forms: intro-to-html/09-forms.md
   - Web Drawing with SVG:
     - Introduction: svg/01-intro.md
     - Circle: svg/02-circle.md
