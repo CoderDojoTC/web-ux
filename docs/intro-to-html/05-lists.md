@@ -39,7 +39,7 @@ This is just a simple list with markers called "bullets" at the front of every n
 </ol>
 
 ## Definition lists
-These are lists that have definition title (```<dt>```) at the front of each item.  The item then has a definition description ```<dd>``` right after the title.  Each item can have it's own distinct label.  Definition lists are ideal for creating a dictionary list where the label
+These are lists that have a definition title (```<dt>```) at the front of each item.  The item then has a definition description ```<dd>``` right after the title.  Each item can have it's own distinct label.  Definition lists are ideal for creating a dictionary list where the label
 
 <dl>
   <dt>Engage</dt>
