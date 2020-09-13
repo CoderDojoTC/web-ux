@@ -1,22 +1,17 @@
-# HTML Headings
+# Adding Bold and Italic to HTML
+HTML allows us to add bold and italic to any text in a document.  To do this we need to wrap the text in ```<b>``` elements for bold and ```<i>``` elements for italics.
 
-HTML headings appear in the ```body``` element.  They have different levels and get smaller in font as you increase the heading level.  Sometimes the first level heading ```<h1>``` is 
-use as the title of the document.  If you have a large document then ```<h2>``` might be the chapter headings and ```<h3/>``` might be the chapter sections.
-
+Here is an example of adding bold and italic to a paragraph of text.
 ```html
-<h1>Article Title</h1>
-<h2>Chapter Heading</h2>
-<h3>Chapter Section</h3>
-<h4>Chapter Subsection</h4>
-<h5>Chapter Sub-Subsection</h5>
+<p>HTML allows us to add <b>bold</b> to any text that we want to
+ <b>emphasize.</b>.  We can also add <i>italic</i> text or a 
+ combination of both<b><i>bold and italic</i></b>.
+</p>
 ```
+Which will render like this:
+<p>HTML allows us to add <b>bold</b> to any text that we want to <b>emphasize.</b>.  We can also add <i>italic</i> text or a combination of both
+<b><i>bold and italic</i></b> elements turned on.
+</p>
 
-Here is how these would render:
-
-<h1>Article Title</h1>
-<h2>Chapter Heading</h2>
-<h3>Chapter Section</h3>
-<h4>Chapter Subsection</h4>
-<h5>Chapter Sub-Subsection</h5>
-
-Note that by default, headings always appear on their own line.  However, you can use CSS to change the font size, font color, spacing around the headers and add border and color to the background of a header.
+!!! Warning
+     You must remember to close the bold and italic markup.  They don't just apply to a single world.  Make sure you close the elements in the reverse order that you added them.

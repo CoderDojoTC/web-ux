@@ -38,6 +38,7 @@ theme:
   custom_dir: 'theme'
   include_sidebar: true
 markdown_extensions:
+  - codehilite
   - admonition
   - attr_list
   - footnotes
@@ -48,4 +49,3 @@ markdown_extensions:
 plugins:
     - search
 markdown_extensions:
-  - codehilite
