@@ -25,18 +25,18 @@ This is just a simple list with markers called "bullets" at the front of every n
 
 ## Ordered lists
 
-<ul>
+<ol>
    <li>Apples</li>
    <li>Bananas</li>
    <li>Pears</li>
-</ul>
+</ol>
 ```
 
-<ul>
+<ol>
    <li>Apples</li>
    <li>Bananas</li>
    <li>Pears</li>
-</ul>
+</ol>
 
 ## Definition lists
 These are lists that have definition title (```<dt>```) at the front of each item.  The item then has a definition description ```<dd>``` right after the title.  Each item can have it's own distinct label.  Definition lists are ideal for creating a dictionary list where the label
