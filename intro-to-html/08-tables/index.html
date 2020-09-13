@@ -298,8 +298,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../06-links/" title="Links" class="md-nav__link">
-      Links
+    <a href="../06-images/" title="Images" class="md-nav__link">
+      Images
     </a>
   </li>
 
@@ -310,8 +310,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../07-images/" title="Images" class="md-nav__link">
-      Images
+    <a href="../07-links/" title="Links" class="md-nav__link">
+      Links
     </a>
   </li>
 
@@ -330,9 +330,49 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Tables
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Tables" class="md-nav__link md-nav__link--active">
       Tables
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-simple-table-two-column-layout" class="md-nav__link">
+    Creating a Simple Table: Two Column Layout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-table-with-header-and-footer-elements" class="md-nav__link">
+    A Table with Header and Footer elements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -497,6 +537,30 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-simple-table-two-column-layout" class="md-nav__link">
+    Creating a Simple Table: Two Column Layout
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-table-with-header-and-footer-elements" class="md-nav__link">
+    A Table with Header and Footer elements
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -516,6 +580,87 @@
                 
                 
                 <h1 id="html-tables">HTML Tables</h1>
+<p>Tables allow us to place content in regular rows and columns within a region of a page.  Tables can be used to place text into two columns to make it easer to read, but they can also be used to create complex displays of reports that include header descriptions and footer totals.</p>
+<p>We will start with a simple description of a table and then build a more detailed example.</p>
+<h2 id="creating-a-simple-table-two-column-layout">Creating a Simple Table: Two Column Layout</h2>
+<p>Here is a simple example of using a table to place text into two vertical columns.  We will use both a <code>&lt;tr&gt;</code> element for a table row and a <code>&lt;td&gt;</code> element for the table data.</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>This text will be placed into the left column 1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>This text will be placed into the right column 2<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+  <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</code></pre></div>
+
+
+<p>Here is how this table will render on a web page:</p>
+<table>
+   <tr>
+      <td>This text will be placed into the left column 1</td>
+      <td>This text will be placed into the right column 2</td>
+  </td>
+</table>
+
+<h2 id="a-table-with-header-and-footer-elements">A Table with Header and Footer elements</h2>
+<div class="codehilite"><pre><span></span><code><span class="nt">&lt;table&gt;</span>
+  <span class="nt">&lt;thead&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Month<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Mentors<span class="nt">&lt;/th&gt;</span>
+      <span class="nt">&lt;th&gt;</span>Students<span class="nt">&lt;/th&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/thead&gt;</span>
+  <span class="nt">&lt;tbody&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>January<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>4<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>February<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>5<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>15<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tbody&gt;</span>
+  <span class="nt">&lt;tfoot&gt;</span>
+    <span class="nt">&lt;tr&gt;</span>
+      <span class="nt">&lt;td&gt;</span>March<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>6<span class="nt">&lt;/td&gt;</span>
+      <span class="nt">&lt;td&gt;</span>24<span class="nt">&lt;/td&gt;</span>
+    <span class="nt">&lt;/tr&gt;</span>
+  <span class="nt">&lt;/tfoot&gt;</span>
+<span class="nt">&lt;/table&gt;</span>
+</code></pre></div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Month</th>
+      <th>Mentors</th>
+      <th>Students</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>January</td>
+      <td>4</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>5</td>
+      <td>15</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>March</td>
+      <td>6</td>
+      <td>24</td>
+    </tr>
+  </tfoot>
+</table>
                 
               
               
@@ -534,7 +679,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../07-images/" title="Images" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../07-links/" title="Links" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -543,7 +688,7 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Images
+                  Links
                 </span>
               </div>
             </a>

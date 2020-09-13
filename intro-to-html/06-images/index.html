@@ -296,18 +296,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../06-links/" title="Links" class="md-nav__link">
-      Links
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -318,10 +306,62 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Images
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Images" class="md-nav__link md-nav__link--active">
       Images
     </a>
     
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-image-size" class="md-nav__link">
+    Changing the Image Size
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practice-for-fast-web-page-loading" class="md-nav__link">
+    Best Practice for Fast Web Page Loading
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../07-links/" title="Links" class="md-nav__link">
+      Links
+    </a>
   </li>
 
         
@@ -497,6 +537,30 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#changing-the-image-size" class="md-nav__link">
+    Changing the Image Size
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#best-practice-for-fast-web-page-loading" class="md-nav__link">
+    Best Practice for Fast Web Page Loading
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -507,7 +571,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/intro-to-html/07-images.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/intro-to-html/06-images.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -516,11 +580,22 @@
                 
                 
                 <h1 id="html-images">HTML Images</h1>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/myPicture.jpg&quot;</span><span class="p">&gt;</span>
+<p>We use the <code>&lt;img&gt;</code> element to place images into a web page.  The <code>src</code> attribute must have a path to the image on your web server.  The src element is the only required element, but it is a best practice to also include an alternate description of the image for people with vision disabilities can use
+also use the web page.</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;img/earth.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Photo of earth from space&quot;</span><span class="p">/&gt;</span>
 </code></pre></div>
 
 
-<p><img src="img/myPicture.jpg"></p>
+<p><img alt="Photo of earch from space" src="../img/earth.jpg" /></p>
+<h2 id="changing-the-image-size">Changing the Image Size</h2>
+<p>You can also add a <code>width</code> and a <code>height</code> to control the horizontal (x) and the vertical (y) dimensions of an image.</p>
+<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;intro-to-html/img/earth.jpg&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Photo of earth from space&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">/&gt;</span>
+</code></pre></div>
+
+
+<p><img alt="Photo of earch from space" src="../img/earth.jpg" /> {: style="height:50px;width:50px"}</p>
+<h2 id="best-practice-for-fast-web-page-loading">Best Practice for Fast Web Page Loading</h2>
+<p>You also want to be aware of the size of your images.  For most web pages, a size of around 10K for small images is fine.  Most cameras today store images in large files of several megabytes.  Make sure you use a tool to reduce the size of these images before you add them to your web page.</p>
                 
               
               
@@ -539,7 +614,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../06-links/" title="Links" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../05-lists/" title="Lists" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -548,19 +623,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Links
+                  Lists
                 </span>
               </div>
             </a>
           
           
-            <a href="../08-tables/" title="Tables" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../07-links/" title="Links" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Tables
+                  Links
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

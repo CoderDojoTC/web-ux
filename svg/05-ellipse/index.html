@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#drawing-rectangles-with-svg" class="md-skip">
+        <a href="#drawing-ellipse-with-svg" class="md-skip">
           Skip to content
         </a>
       
@@ -296,8 +296,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../intro-to-html/06-links/" title="Links" class="md-nav__link">
-      Links
+    <a href="../../intro-to-html/06-images/" title="Images" class="md-nav__link">
+      Images
     </a>
   </li>
 
@@ -308,8 +308,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../intro-to-html/07-images/" title="Images" class="md-nav__link">
-      Images
+    <a href="../../intro-to-html/07-links/" title="Links" class="md-nav__link">
+      Links
     </a>
   </li>
 
@@ -432,9 +432,49 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Ellipse
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Ellipse" class="md-nav__link md-nav__link--active">
       Ellipse
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-markup-for-svg-ellipse" class="md-nav__link">
+    Example Markup for SVG Ellipse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-of-svg-ellipse" class="md-nav__link">
+    Rendering of SVG Ellipse
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -497,6 +537,30 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-markup-for-svg-ellipse" class="md-nav__link">
+    Example Markup for SVG Ellipse
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rendering-of-svg-ellipse" class="md-nav__link">
+    Rendering of SVG Ellipse
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -515,19 +579,33 @@
                   
                 
                 
-                <h1 id="drawing-rectangles-with-svg">Drawing Rectangles with SVG</h1>
+                <h1 id="drawing-ellipse-with-svg">Drawing Ellipse with SVG</h1>
+<p>An ellipse can be thought of as a circle that is not perfectly round.  The height and width of an ellipse may be different.  In SVG, the <code>ellipse</code> element does not have a single radius like a circle, but
+it has both a horizontal and a vertical radius.</p>
+<p>Here are the attributes of an ellipse element:</p>
+<ul>
+<li><strong>cx</strong> -  the x or horizontal dimension of the circle's center</li>
+<li><strong>cy</strong> - the y or vertical dimension of the circle's center </li>
+<li><strong>rx</strong> - the x or horizontal radius of the ellipse</li>
+<li><strong>ry</strong> - the y or vertical radius of the ellipse</li>
+</ul>
+<h2 id="example-markup-for-svg-ellipse">Example Markup for SVG Ellipse</h2>
+<p>This example will generate an ellipse:</p>
 <div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;200&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;200&quot;</span><span class="p">&gt;</span>
   <span class="p">&lt;</span><span class="nt">ellipse</span> <span class="na">cx</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">cy</span><span class="o">=</span><span class="s">&quot;80&quot;</span> <span class="na">rx</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">ry</span><span class="o">=</span><span class="s">&quot;50&quot;</span>
-           <span class="na">fill</span><span class="o">=</span><span class="s">&quot;cyan&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="err">;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;purple&quot;</span> <span class="p">/&gt;</span>
+           <span class="na">fill</span><span class="o">=</span><span class="s">&quot;yellow&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="err">;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;purple&quot;</span> <span class="p">/&gt;</span>
 <span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
 </code></pre></div>
 
 
-<p>This example will generate the following line:</p>
+<p>Note that the second line has the color and width of the border.</p>
+<h2 id="rendering-of-svg-ellipse">Rendering of SVG Ellipse</h2>
 <p><svg height="200" width="200">
   <ellipse cx="100" cy="80" rx="90" ry="50"
-           fill="cyan" stroke-width="3"; stroke="purple" />
+           fill="yellow" stroke-width="3"; stroke="purple" />
 </svg></p>
+<p>Note that the first line is about positioning and size.  The properties in teh second line can
+also be determined by SVC CSS properties.</p>
                 
               
               
