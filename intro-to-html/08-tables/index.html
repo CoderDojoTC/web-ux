@@ -584,14 +584,13 @@
 <p>We will start with a simple description of a table and then build a more detailed example.</p>
 <h2 id="creating-a-simple-table-two-column-layout">Creating a Simple Table: Two Column Layout</h2>
 <p>Here is a simple example of using a table to place text into two vertical columns.  We will use both a <code>&lt;tr&gt;</code> element for a table row and a <code>&lt;td&gt;</code> element for the table data.</p>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">table</span><span class="p">&gt;</span>
-   <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>This text will be placed into the left column 1<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">td</span><span class="p">&gt;</span>This text will be placed into the right column 2<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<pre><code class="html">&lt;table&gt;
+   &lt;tr&gt;
+      &lt;td&gt;This text will be placed into the left column 1&lt;/td&gt;
+      &lt;td&gt;This text will be placed into the right column 2&lt;/td&gt;
+  &lt;/td&gt;
+&lt;/table&gt;
+</code></pre>
 
 <p>Here is how this table will render on a web page:</p>
 <table>
@@ -602,36 +601,35 @@
 </table>
 
 <h2 id="a-table-with-header-and-footer-elements">A Table with Header and Footer elements</h2>
-<div class="codehilite"><pre><span></span><code><span class="nt">&lt;table&gt;</span>
-  <span class="nt">&lt;thead&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;th&gt;</span>Month<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th&gt;</span>Mentors<span class="nt">&lt;/th&gt;</span>
-      <span class="nt">&lt;th&gt;</span>Students<span class="nt">&lt;/th&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/thead&gt;</span>
-  <span class="nt">&lt;tbody&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td&gt;</span>January<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>4<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>12<span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td&gt;</span>February<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>5<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>15<span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/tbody&gt;</span>
-  <span class="nt">&lt;tfoot&gt;</span>
-    <span class="nt">&lt;tr&gt;</span>
-      <span class="nt">&lt;td&gt;</span>March<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>6<span class="nt">&lt;/td&gt;</span>
-      <span class="nt">&lt;td&gt;</span>24<span class="nt">&lt;/td&gt;</span>
-    <span class="nt">&lt;/tr&gt;</span>
-  <span class="nt">&lt;/tfoot&gt;</span>
-<span class="nt">&lt;/table&gt;</span>
-</code></pre></div>
-
+<pre><code>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Month&lt;/th&gt;
+      &lt;th&gt;Mentors&lt;/th&gt;
+      &lt;th&gt;Students&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;January&lt;/td&gt;
+      &lt;td&gt;4&lt;/td&gt;
+      &lt;td&gt;12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;February&lt;/td&gt;
+      &lt;td&gt;5&lt;/td&gt;
+      &lt;td&gt;15&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+  &lt;tfoot&gt;
+    &lt;tr&gt;
+      &lt;td&gt;March&lt;/td&gt;
+      &lt;td&gt;6&lt;/td&gt;
+      &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tfoot&gt;
+&lt;/table&gt;
+</code></pre>
 
 <table>
   <thead>

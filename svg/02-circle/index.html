@@ -570,22 +570,20 @@
 tell our web browser to draw it in a region that is 100 pixels
 high and 100 pixels wide.  We then need to tell the web browser
 where to center the circle in both the X and Y dimensions (cx and cy) and what the radius of the circle should be.  Here is an example:</p>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">circle</span> <span class="na">cx</span><span class="o">=</span><span class="s">&quot;50&quot;</span> <span class="na">cy</span><span class="o">=</span><span class="s">&quot;50&quot;</span> <span class="na">r</span><span class="o">=</span><span class="s">&quot;40&quot;</span><span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<pre><code class="html">&lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;
+  &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;40&quot;/&gt;
+&lt;/svg&gt;
+</code></pre>
 
 <p>This example will generate the following circle:</p>
 <p><svg height="100" width="100">
   <circle cx="50" cy="50" r="40" />
 </svg></p>
 <p>That is kind of a dark circle.  Let's fill in the circle with blue and make the border be red.  We will do this by adding the fill, stroke (for the color of the border) and the stroke-width that will change the width of the border of the circle.</p>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">circle</span> <span class="na">cx</span><span class="o">=</span><span class="s">&quot;50&quot;</span> <span class="na">cy</span><span class="o">=</span><span class="s">&quot;50&quot;</span> <span class="na">r</span><span class="o">=</span><span class="s">&quot;40&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;red&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;4&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;blue&quot;</span> <span class="p">/&gt;</span>
-<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<pre><code class="html">&lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;
+  &lt;circle cx=&quot;50&quot; cy=&quot;50&quot; r=&quot;40&quot; stroke=&quot;red&quot; stroke-width=&quot;4&quot; fill=&quot;blue&quot; /&gt;
+&lt;/svg&gt;
+</code></pre>
 
 <p>This will generate the following result:</p>
 <p><svg height="100" width="100">

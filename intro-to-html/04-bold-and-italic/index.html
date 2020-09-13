@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#html-headings" class="md-skip">
+        <a href="#adding-bold-and-italic-to-html" class="md-skip">
           Skip to content
         </a>
       
@@ -515,29 +515,21 @@
                   
                 
                 
-                <h1 id="html-headings">HTML Headings</h1>
-<p>HTML headings appear in the <code>body</code> element.  They have different levels and get smaller in font as you increase the heading level.  Sometimes the first level heading <code>&lt;h1&gt;</code> is 
-use as the title of the document.  If you have a large document then <code>&lt;h2&gt;</code> might be the chapter headings and <code>&lt;h3/&gt;</code> might be the chapter sections.</p>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Article Title<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Chapter Heading<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Chapter Section<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Chapter Subsection<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>Chapter Sub-Subsection<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
-</code></pre></div>
+                <h1 id="adding-bold-and-italic-to-html">Adding Bold and Italic to HTML</h1>
+<p>HTML allows us to add bold and italic to any text in a document.  To do this we need to wrap the text in <code>&lt;b&gt;</code> elements for bold and <code>&lt;i&gt;</code> elements for italics.</p>
+<p>Here is an example of adding bold and italic to a paragraph of text.</p>
+<pre><code class="html">&lt;p&gt;HTML allows us to add &lt;b&gt;bold&lt;/b&gt; to any text that we want to
+ &lt;b&gt;emphasize.&lt;/b&gt;.  We can also add &lt;i&gt;italic&lt;/i&gt; text or a 
+ combination of both&lt;b&gt;&lt;i&gt;bold and italic&lt;/i&gt;&lt;/b&gt;.
+&lt;/p&gt;
+</code></pre>
 
-
-<p>Here is how these would render:</p>
-<h1>Article Title</h1>
-
-<h2>Chapter Heading</h2>
-
-<h3>Chapter Section</h3>
-
-<h4>Chapter Subsection</h4>
-
-<h5>Chapter Sub-Subsection</h5>
-
-<p>Note that by default, headings always appear on their own line.  However, you can use CSS to change the font size, font color, spacing around the headers and add border and color to the background of a header.</p>
+<p>Which will render like this:
+<p>HTML allows us to add <b>bold</b> to any text that we want to <b>emphasize.</b>.  We can also add <i>italic</i> text or a combination of both
+<b><i>bold and italic</i></b> elements turned on.
+</p></p>
+<p>!!! Warning
+     You must remember to close the bold and italic markup.  They don't just apply to a single world.  Make sure you close the elements in the reverse order that you added them.</p>
                 
               
               
