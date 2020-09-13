@@ -19,7 +19,7 @@
     
     
       
-        <title>Links - CoderDojo TC Web-UX</title>
+        <title>Elements and Attributes - CoderDojo TC Web-UX</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#html-links" class="md-skip">
+        <a href="#elements-and-attributes" class="md-skip">
           Skip to content
         </a>
       
@@ -88,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Links
+              Elements and Attributes
             
           </span>
         </div>
@@ -248,11 +248,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../01a-elements-and-attributes/" title="Elements and Attributes" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Elements and Attributes" class="md-nav__link md-nav__link--active">
       Elements and Attributes
     </a>
+    
   </li>
 
         
@@ -320,53 +329,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Links
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Links" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../07-links/" title="Links" class="md-nav__link">
       Links
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#linking-to-images" class="md-nav__link">
-    Linking to Images
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -542,23 +509,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#linking-to-images" class="md-nav__link">
-    Linking to Images
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -569,7 +519,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/intro-to-html/07-links.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/intro-to-html/01a-elements-and-attributes.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -577,23 +527,37 @@
                   
                 
                 
-                <h1 id="html-links">HTML Links</h1>
-<p>HTML links are created using the HTML anchor element <code>&lt;a/&gt;</code>.  The anchor has an attribute with the name of <strong><em>href</em></strong> that is used to hold the URL of the page to go to when the link is clicked.  Here is an example:</p>
-<pre><code class="html">&lt;a href=&quot;http://example.com/mypage.html&quot;&gt;Link to mypage&lt;/a&gt;
+                <h1 id="elements-and-attributes">Elements and Attributes</h1>
+<p>HTML is composed of a tree-structure of things called "elements".  Just like a tree, HTML files have a single root (think of a trunk), many branch elements that contain other elements, and finally leaves of the tree that contain the text that we display on a page. Elements are usually composed of pairs of tags - begin tags and end tags.  Here are the main parts of an element:</p>
+<p><img alt="Element Components" src="../img/element-components.png" /></p>
+<ul>
+<li>The begin tag is the start of the element.  It always starts with a "less then" character and ends with a "greater than" character.</li>
+<li>The begin tag can have many attributes which are name-value pairs</li>
+<li>The name-value pairs are composed of attribute names, followed by an equal sign, followed by the attribute values surrounded by double quotes</li>
+<li>The begin and end tags surround the element text.  This is usually the leaf element or other branch elements</li>
+<li>The element text is followed by an end tag.  Note that the end tag has the same characters as a begin tag but it also has a forwad slash after the less-than character.</li>
+</ul>
+<p>What is difficult to understand is that elements can contain other elements which in turn can contain other elements.  Here is an example of this tree structure:</p>
+<pre><code class="xml">&lt;root&gt;
+   &lt;branch&gt;
+      &lt;branch&gt;
+         &lt;branch&gt;This is the leaf text.&lt;/branch&gt;
+      &lt;/branch&gt;
+   &lt;/branch&gt;
+&lt;root&gt;
 </code></pre>
 
-<p>You can use the HTML anchor tag to make many elements clickable, not just text.  So you can put images and buttons inside the content of the anchor element.</p>
-<h2 id="linking-to-images">Linking to Images</h2>
-<p>The anchor tag allows you to got to another web page if you click on a image. Here is the format of using a clickable image:</p>
-<pre><code class="html">&lt;a href=&quot;https://www.coderdojotc.org/web-ux/intro-to-html/img/earth.jpg&quot;&gt;
-   &lt;img src=&quot;https://www.coderdojotc.org/web-ux/intro-to-html/img/earth.jpg&quot; alt=&quot;Photo of earth from space&quot; width=&quot;100&quot; height=&quot;100&quot;/&gt;
-&lt;/a&gt;
+<p>It is also interesting to note that it does not matter where 
+you put newlines (carriage returns) between the branch elements.  HTML will render the same within the browser.</p>
+<p>The following is the same as the markup above:</p>
+<pre><code class="xml">&lt;root&gt;&lt;branch&gt;&lt;branch&gt;
+         &lt;branch&gt;This is the leaf text.&lt;/branch&gt;
+&lt;/branch&gt;&lt;/branch&gt;&lt;root&gt;
 </code></pre>
 
-<p>Try clicking on this image:
-<a href="https://www.coderdojotc.org/web-ux/intro-to-html/img/earth.jpg">
-   <img src="https://www.coderdojotc.org/web-ux/intro-to-html/img/earth.jpg" alt="Photo of earth from space" width="100" height="100"/>
-</a></p>
+<p>If you are new to markup languages, this terminology of "elements" and "attributes" and the rules will seem a bit odd at first.  However, as you begin to use it you will learn to
+appreciate how allowing us to be flexible with the way spaces are used when
+we create the HTML files to be convenient.  It allows us to use consistent rules for how to display the test on a web page.</p>
                 
               
               
@@ -612,7 +576,7 @@
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../06-images/" title="Images" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../01-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -621,19 +585,19 @@
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Images
+                  Introduction
                 </span>
               </div>
             </a>
           
           
-            <a href="../08-tables/" title="Tables" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../02-html-structure/" title="HTML File Structure" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Tables
+                  HTML File Structure
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

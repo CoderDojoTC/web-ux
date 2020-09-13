@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#html-file-structure-structure" class="md-skip">
+        <a href="#html-file-structure" class="md-skip">
           Skip to content
         </a>
       
@@ -248,6 +248,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../01a-elements-and-attributes/" title="Elements and Attributes" class="md-nav__link">
+      Elements and Attributes
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -315,6 +327,13 @@
         <li class="md-nav__item">
   <a href="#body" class="md-nav__link">
     body
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#block-and-inline-elements" class="md-nav__link">
+    Block and Inline Elements
   </a>
   
 </li>
@@ -601,6 +620,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#block-and-inline-elements" class="md-nav__link">
+    Block and Inline Elements
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -621,10 +647,11 @@
                   
                 
                 
-                <h1 id="html-file-structure-structure">HTML File Structure Structure</h1>
+                <h1 id="html-file-structure">HTML File Structure</h1>
+<p>HTML files all have a consistent structure of elements and attributes. In this lab we will take a look at this structure and see how the elements work together to describe the way a web page is laid out and rendered.</p>
 <h2 id="getting-started-template">Getting Started Template</h2>
 <p>Here is a standard template we will be using for our example programs.</p>
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre><code class="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot;&gt;
    &lt;head&gt;
       &lt;meta charset=&quot;utf-8&quot;/&gt;
@@ -637,16 +664,21 @@
 </code></pre>
 
 <h2 id="doctype">DOCTYPE</h2>
-<p>There are many varieties of HTML files.  This line indicates that
-this file conforms to the most common modern format HTML5.</p>
+<p>There are many varieties and versions of HTML files.  This line indicates that
+this file conforms to the most common modern format: HTML 5.</p>
 <h2 id="html">html</h2>
-<p>This is the root element.  The begin tag should be the second line of the file and the end tag the last line of the file.  The html element contains two parts.  The first is the head that hold the title and data about the content and the body has the page content itself.</p>
+<p>This is the root element.  The begin tag should be the second line of the file and the end tag the last line of the file.  The html element contains two parts.  The first is the head that hold the title and data about the content and the body has the page content itself.  The <code>lang="en"</code> tells web crawlers that the language of this web page is English.</p>
 <h2 id="head">head</h2>
-<p>The head element contains information about the page content.  This includes the page title that appears on the browser tab.  It is a good best practice to pick a short but descriptive page title.</p>
+<p>The head element contains information about the page content.  This includes the page title that appears on the browser tab.  It is a good best practice to pick a short but descriptive page title.  The <code>&lt;meta charset="utf-8"/&gt;</code> element indicates that the encoding character set is UTF-8.  This is the preferred format for encoding web pages.</p>
 <h2 id="body">body</h2>
-<p>The body element contains the page content itself.</p>
-<h1 id="github-course">GitHub Course</h1>
-<p>https://lab.github.com/githubtraining/introduction-to-html</p>
+<p>The body element contains the page content itself.  The elements within the body elements hold the structure of the web page and the text that is rendered within each element.</p>
+<h2 id="block-and-inline-elements">Block and Inline Elements</h2>
+<p>The body element contains two types of elements:</p>
+<ol>
+<li><strong>Block elements</strong> always starts on a new line and takes up the full width available.  Block elements stretch out to the left and right as far as the layout permits.  Block elements are used to arrange large regions of page layout.</li>
+<li><strong>Inline elements</strong> do not start on a new line and it only take up as much width as necessary.  They are frequently used to change the way individual words are displayed within text blocks.  For example you can use an inline element to change the font or color of a few words within a line of text.</li>
+</ol>
+<p>One of the tricky things about learning HTML layout is to understand the rules of how block and inline elements work together.</p>
                 
               
               
@@ -665,7 +697,7 @@ this file conforms to the most common modern format HTML5.</p>
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../01-intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../01a-elements-and-attributes/" title="Elements and Attributes" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -674,7 +706,7 @@ this file conforms to the most common modern format HTML5.</p>
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Introduction
+                  Elements and Attributes
                 </span>
               </div>
             </a>
