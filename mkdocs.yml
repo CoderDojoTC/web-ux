@@ -4,6 +4,7 @@ nav:
   - Home: index.md
   - Intoduction to HTML:
     - Introduction: intro-to-html/01-intro.md
+    - Elements and Attributes: intro-to-html/01a-elements-and-attributes.md
     - HTML File Structure: intro-to-html/02-html-structure.md
     - Headings: intro-to-html/03-headings.md
     - Bold and Italic: intro-to-html/04-bold-and-italic.md
