@@ -19,7 +19,7 @@
     
     
       
-        <title>Line - CoderDojo TC Web-UX</title>
+        <title>Polyline - CoderDojo TC Web-UX</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#drawing-lines-with-svg" class="md-skip">
+        <a href="#drawing-a-polygon-with-svg" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Line
+              Polyline
             
           </span>
         </div>
@@ -411,53 +411,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Line
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Line" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../03-line/" title="Line" class="md-nav__link">
       Line
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#maze-example" class="md-nav__link">
-    Maze example
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -501,11 +459,20 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../07-polyline/" title="Polyline" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+    <a href="./" title="Polyline" class="md-nav__link md-nav__link--active">
       Polyline
     </a>
+    
   </li>
 
         
@@ -579,23 +546,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#maze-example" class="md-nav__link">
-    Maze example
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -606,7 +556,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/svg/03-line.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/svg/07-polyline.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -614,48 +564,27 @@
                   
                 
                 
-                <h1 id="drawing-lines-with-svg">Drawing Lines with SVG</h1>
-<pre><code class="html">&lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;
-  &lt;line x1=&quot;20&quot; y1=&quot;10&quot; x2=&quot;90&quot; y2=&quot;80&quot; stroke=&quot;green&quot; stroke-width=&quot;5&quot;/&gt;
+                <h1 id="drawing-a-polygon-with-svg">Drawing A Polygon with SVG</h1>
+<p>A polyline element is used to create any drawing that consists of only strait lines.  It is
+very similar to the polygon in that it uses a points attribute to store the points.</p>
+<h1 id="svg-polyline-drawing">SVG Polyline Drawing</h1>
+<pre><code class="html">&lt;svg height=&quot;160&quot; width=&quot;200&quot;&gt;
+  &lt;polyline points=&quot;0,40 40,40 40,80 80,80 80,120 120,120 120,160&quot;
+      fill=&quot;none&quot; stroke=&quot;purple&quot; stroke-width=&quot;3&quot;/&gt;
 &lt;/svg&gt;
 </code></pre>
 
-<p>This example will generate the following circle:</p>
-<p><svg height="100" width="100">
-  <line x1="20" y1="10" x2="90" y2="80" stroke="green" stroke-width="5"/>
+<p><svg height="160" width="200">
+  <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160"
+     fill="none" stroke="purple" stroke-width="3"/>
 </svg></p>
-<h2 id="maze-example">Maze example</h2>
-<p>You can use lines to generate things like the maze below:</p>
-<p><svg width="100" height="100">
-  <title>6 by 6 orthogonal maze</title>
-  <desc>6 by 6 orthogonal maze generated by The Maze Generator Website (http://www.mazegenerator.net/).</desc>
-  <g fill="none" stroke="black" stroke-width="2" stroke-linecap="square">
-    <line x1="2" y1="2" x2="34" y2="2" />
-    <line x1="50" y1="2" x2="98" y2="2" />
-    <line x1="18" y1="18" x2="50" y2="18" />
-    <line x1="18" y1="34" x2="34" y2="34" />
-    <line x1="50" y1="34" x2="82" y2="34" />
-    <line x1="2" y1="50" x2="18" y2="50" />
-    <line x1="34" y1="50" x2="66" y2="50" />
-    <line x1="18" y1="66" x2="34" y2="66" />
-    <line x1="50" y1="66" x2="66" y2="66" />
-    <line x1="34" y1="82" x2="82" y2="82" />
-    <line x1="2" y1="98" x2="50" y2="98" />
-    <line x1="66" y1="98" x2="98" y2="98" />
-    <line x1="2" y1="2" x2="2" y2="98" />
-    <line x1="18" y1="18" x2="18" y2="34" />
-    <line x1="18" y1="66" x2="18" y2="82" />
-    <line x1="34" y1="34" x2="34" y2="66" />
-    <line x1="50" y1="18" x2="50" y2="34" />
-    <line x1="50" y1="82" x2="50" y2="98" />
-    <line x1="66" y1="2" x2="66" y2="18" />
-    <line x1="66" y1="50" x2="66" y2="66" />
-    <line x1="82" y1="18" x2="82" y2="82" />
-    <line x1="98" y1="2" x2="98" y2="98" />
-  </g>
+<p>Note that we must use the <code>fill=none</code> attribute or the rendering tool will try to
+fill in the area inside the polyline.</p>
+<p><svg height="160" width="200">
+  <polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160"
+     stroke="purple" stroke-width="3"/>
 </svg></p>
-<p>To generate the maze above I used <a href="http://www.mazegenerator.net/">Maze Generator</a> and set the size to be a 6X6 maze.
-I then used the SVG output option.</p>
+<p>This may not be the effect that you want!</p>
                 
               
               
@@ -674,7 +603,7 @@ I then used the SVG output option.</p>
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../02-circle/" title="Circle" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../06-polygon/" title="Polygon" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -683,19 +612,19 @@ I then used the SVG output option.</p>
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Circle
+                  Polygon
                 </span>
               </div>
             </a>
           
           
-            <a href="../04-rectangle/" title="Rectangle" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../08-path/" title="Path" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Rectangle
+                  Path
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">

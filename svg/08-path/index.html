@@ -19,7 +19,7 @@
     
     
       
-        <title>Line - CoderDojo TC Web-UX</title>
+        <title>Path - CoderDojo TC Web-UX</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#drawing-lines-with-svg" class="md-skip">
+        <a href="#drawing-a-paths-with-svg" class="md-skip">
           Skip to content
         </a>
       
@@ -89,7 +89,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Line
+              Path
             
           </span>
         </div>
@@ -411,53 +411,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Line
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Line" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../03-line/" title="Line" class="md-nav__link">
       Line
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#maze-example" class="md-nav__link">
-    Maze example
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -513,11 +471,74 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../08-path/" title="Path" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Path
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Path" class="md-nav__link md-nav__link--active">
       Path
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#simple-paths-with-move-horizontal-vertical-and-lineto-commands" class="md-nav__link">
+    Simple Paths with Move, Horizontal, Vertical and Lineto Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-your-path-with-z" class="md-nav__link">
+    Closing Your Path With "Z"
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curve-commands" class="md-nav__link">
+    Curve commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sawtooth-vs-sine-wave" class="md-nav__link">
+    Sawtooth vs Sine Wave
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -588,8 +609,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#maze-example" class="md-nav__link">
-    Maze example
+  <a href="#simple-paths-with-move-horizontal-vertical-and-lineto-commands" class="md-nav__link">
+    Simple Paths with Move, Horizontal, Vertical and Lineto Commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#closing-your-path-with-z" class="md-nav__link">
+    Closing Your Path With "Z"
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#curve-commands" class="md-nav__link">
+    Curve commands
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sawtooth-vs-sine-wave" class="md-nav__link">
+    Sawtooth vs Sine Wave
   </a>
   
 </li>
@@ -606,7 +648,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/svg/03-line.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://github.com/CoderDojoTC/web-ux/blob/master/docs/svg/08-path.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
@@ -614,48 +656,84 @@
                   
                 
                 
-                <h1 id="drawing-lines-with-svg">Drawing Lines with SVG</h1>
-<pre><code class="html">&lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;
-  &lt;line x1=&quot;20&quot; y1=&quot;10&quot; x2=&quot;90&quot; y2=&quot;80&quot; stroke=&quot;green&quot; stroke-width=&quot;5&quot;/&gt;
+                <h1 id="drawing-a-paths-with-svg">Drawing A Paths with SVG</h1>
+<p>Up until now, the SVG examples we were showing you were all pretty simple.  They were
+not very different from the Turtle Graphics drawings that we generated in Scratch or
+with our turtle graphics libraries in Python.  But now we will start to really
+show how the SVG standard is really impressive.  And this is where SVG paths come in.
+In SVG, the path operator is considered the most powerful tool in our drawing library!</p>
+<p>The <code>d</code> attribute is the way that that we pass our drawing data to the path element.
+But  <code>d</code> is really, really smart.  It knows how to move to any point in our drawing
+area and then use relative horizontal and vertical drawing commands from that initial moveto point.</p>
+<p>Here are the three initial "commands that we will use:</p>
+<ol>
+<li>M - move to any X,Y point</li>
+<li>H - move Horizontally</li>
+<li>V - move Vertically</li>
+<li>L - draw a line to a given point (Lineto)</li>
+</ol>
+<h2 id="simple-paths-with-move-horizontal-vertical-and-lineto-commands">Simple Paths with Move, Horizontal, Vertical and Lineto Commands</h2>
+<p>Here is the path element used to draw a simple square</p>
+<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
+  &lt;path d=&quot;M 10,10 H 90 V 90 H 10 L 10,10&quot;
+      fill=&quot;none&quot; stroke=&quot;blue&quot; stroke-width=&quot;3&quot;/&gt;
 &lt;/svg&gt;
 </code></pre>
 
-<p>This example will generate the following circle:</p>
-<p><svg height="100" width="100">
-  <line x1="20" y1="10" x2="90" y2="80" stroke="green" stroke-width="5"/>
-</svg></p>
-<h2 id="maze-example">Maze example</h2>
-<p>You can use lines to generate things like the maze below:</p>
 <p><svg width="100" height="100">
-  <title>6 by 6 orthogonal maze</title>
-  <desc>6 by 6 orthogonal maze generated by The Maze Generator Website (http://www.mazegenerator.net/).</desc>
-  <g fill="none" stroke="black" stroke-width="2" stroke-linecap="square">
-    <line x1="2" y1="2" x2="34" y2="2" />
-    <line x1="50" y1="2" x2="98" y2="2" />
-    <line x1="18" y1="18" x2="50" y2="18" />
-    <line x1="18" y1="34" x2="34" y2="34" />
-    <line x1="50" y1="34" x2="82" y2="34" />
-    <line x1="2" y1="50" x2="18" y2="50" />
-    <line x1="34" y1="50" x2="66" y2="50" />
-    <line x1="18" y1="66" x2="34" y2="66" />
-    <line x1="50" y1="66" x2="66" y2="66" />
-    <line x1="34" y1="82" x2="82" y2="82" />
-    <line x1="2" y1="98" x2="50" y2="98" />
-    <line x1="66" y1="98" x2="98" y2="98" />
-    <line x1="2" y1="2" x2="2" y2="98" />
-    <line x1="18" y1="18" x2="18" y2="34" />
-    <line x1="18" y1="66" x2="18" y2="82" />
-    <line x1="34" y1="34" x2="34" y2="66" />
-    <line x1="50" y1="18" x2="50" y2="34" />
-    <line x1="50" y1="82" x2="50" y2="98" />
-    <line x1="66" y1="2" x2="66" y2="18" />
-    <line x1="66" y1="50" x2="66" y2="66" />
-    <line x1="82" y1="18" x2="82" y2="82" />
-    <line x1="98" y1="2" x2="98" y2="98" />
-  </g>
+  <path d="M 10,10 H 90 V 90 H 10 L 10,10"
+     fill="none" stroke="blue" stroke-width="3"/>
 </svg></p>
-<p>To generate the maze above I used <a href="http://www.mazegenerator.net/">Maze Generator</a> and set the size to be a 6X6 maze.
-I then used the SVG output option.</p>
+<h2 id="closing-your-path-with-z">Closing Your Path With "Z"</h2>
+<p>Sometimes you don't want to put in that last Lineto command.  You can just use the letter "z" to tell it where to go back to the starting point.</p>
+<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
+  &lt;path d=&quot;M 10,10 H 90 V 90 H 10 Z&quot;
+     fill=&quot;none&quot; stroke=&quot;blue&quot; stroke-width=&quot;3&quot;/&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<h2 id="curve-commands">Curve commands</h2>
+<p>Now that you have the basics of path commands drawing straight lines, lets have some fun with drawing curves.  You can always draw curves with lots and lots of small short lines.  But it is very inefficient to send thousands of little drawing commands to the web browser.  What if we could just tell
+the web browser to draw a graceful curve between points?  That is where the SVG Path Curve command comes in handy.</p>
+<ul>
+<li>C - Draw a Cubic Bézier curve using x1 y1, x2 y2 and x y</li>
+</ul>
+<p>Here is the SVG code that draws a curve from (10,10) through 100,100 and ends at (200, 10).</p>
+<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
+   &lt;path d=&quot;M 10,10 C 20,20 100,100 200,10&quot; 
+   stroke=&quot;black&quot; fill=&quot;transparent&quot;/&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p>Here is what it looks like:</p>
+<p><svg width="200" height="100">
+   <path d="M 10,10 C 20,20 100,100 200,10" 
+   stroke="black" fill="transparent" stroke-width="3"/>
+</svg></p>
+<p>Note that there are a few differences.  We don't just add the center point of the curve.
+We also tell the direction to proceed from the origin (in a diagonal line from 10,10 to 20,20) is one additional point.  The center point of the curve is 100,100 and the final point is 200,10</p>
+<h2 id="sawtooth-vs-sine-wave">Sawtooth vs Sine Wave</h2>
+<p>A sawtooth wave is a wave that has streight lines that go from a minimum to a maximum.</p>
+<pre><code class="html">&lt;svg width=&quot;700&quot; height=&quot;110&quot;&gt;
+   &lt;path d=&quot;M 0,0 L 100,100 L 200,0 L 300,100 L 400,0 L 500,100 L 600,0 L 700,100 L 800,0&quot; 
+   stroke=&quot;black&quot; fill=&quot;none&quot; stroke-width=&quot;3&quot;/&gt;
+   &lt;!-- This is the axis line --&gt;
+   &lt;path d=&quot;M 0,50 L 700,50&quot; fill=&quot;none&quot; stroke=&quot;silver&quot; stroke-width=&quot;1&quot;&gt;
+&lt;/svg&gt;
+</code></pre>
+
+<p><svg width="700" height="110">
+   <path d="M 0,0 L 100,100 L 200,0 L 300,100 L 400,0 L 500,100 L 600,0 L 700,100 L 800,0" 
+   stroke="black" fill="none" stroke-width="3"/>
+    <path d="M 0,50 L 700,50" fill="none" stroke="silver" stroke-width="1">
+</svg></p>
+<p><svg width="700" height="110">
+   <path d="M 0,0 C 50,0 25,25 50,50 C 50,100 150,50 200,0" 
+   stroke="black" fill="none" stroke-width="3"/>
+</svg></p>
+<p><svg width = "150px" height = "200px" viewBox = "0 0 100 100">
+         <path stroke = "black" fill = "none" d = "M0,0 C36.42,0 70.58,100 100,100" />
+</svg></p>
                 
               
               
@@ -674,7 +752,7 @@ I then used the SVG output option.</p>
       <div class="md-footer-nav">
         <nav class="md-footer-nav__inner md-grid">
           
-            <a href="../02-circle/" title="Circle" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <a href="../07-polyline/" title="Polyline" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
               <div class="md-flex__cell md-flex__cell--shrink">
                 <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
               </div>
@@ -683,19 +761,19 @@ I then used the SVG output option.</p>
                   <span class="md-footer-nav__direction">
                     Previous
                   </span>
-                  Circle
+                  Polyline
                 </span>
               </div>
             </a>
           
           
-            <a href="../04-rectangle/" title="Rectangle" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../../leaning-objectives/" title="Learning Objectives" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Rectangle
+                  Learning Objectives
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
