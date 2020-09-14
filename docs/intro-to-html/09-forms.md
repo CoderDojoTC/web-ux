@@ -20,7 +20,7 @@ Form all have the following structure:
 </form>
 ```
 
-The action attribute is the place where the form data is sent.  Usually HTML forms send their data via an HTTP POST function.  The submit input just before the form close tag is the button that the user presses.  All the rest of the form consists of labels and inputs in pairs.  Sometimes the labels and input pairs are on the same line, and sometimes they are each on their own line. In some inputs such as checkboxs and radio button the label occurs before the input. You can use CSS to determine how your form is styled.
+The action attribute is the place where the form data is sent.  Usually HTML forms send their data via an HTTP POST function.  The submit input just before the form close tag is the button that the user presses.  All the rest of the form consists of labels and inputs in pairs.  Sometimes the labels and input pairs are on the same line, and sometimes they are each on their own line. In some inputs such as checkboxes and radio button the label occurs before the input. You can use CSS to determine how your form is styled.
 
 Here are the different types of input fields:
 
