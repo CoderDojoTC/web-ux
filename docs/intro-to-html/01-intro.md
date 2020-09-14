@@ -8,7 +8,7 @@ Here are the topics we will cover in this course:
 
 1. [Elements and attributes](./01a-elements-and-attributes.md) - How we create HTML pages using data formats called elements and attributes.
 2. [HTML file structure](./02-html-structure.md) - How the highest level elements in a web page work together.
-3. [HTML headings](./03-html-headings.md) - How we create headings in a web page such as Chapter or Section headings and titles.
+3. [HTML headings](./03-headings.md) - How we create headings in a web page such as Chapter or Section headings and titles.
 4. [Bold and italic](./04-bold-and-italic.md) (as well as superscript and subscripts) - how we make inline text have a different formatting style
 5. [Lists](./05-lists.md) - How we create unordered bullet lists and ordered numbered lists
 6. [Images](./06-images.md) - How we add images into a web page
