@@ -258,9 +258,42 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Elements and Attributes
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Elements and Attributes" class="md-nav__link md-nav__link--active">
       Elements and Attributes
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#empty-elements" class="md-nav__link">
+    Empty Elements
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -509,6 +542,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#empty-elements" class="md-nav__link">
+    Empty Elements
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -558,6 +608,14 @@ you put newlines (carriage returns) between the branch elements.  HTML will rend
 <p>If you are new to markup languages, this terminology of "elements" and "attributes" and the rules will seem a bit odd at first.  However, as you begin to use it you will learn to
 appreciate how allowing us to be flexible with the way spaces are used when
 we create the HTML files to be convenient.  It allows us to use consistent rules for how to display the test on a web page.</p>
+<h2 id="empty-elements">Empty Elements</h2>
+<p>There are some places in an HTML file where the contents of the element is empty. For these elements there is no end element and you add a forward slash
+before the greater then.</p>
+<p>Examples of empty elements:</p>
+<pre><code class="html">&lt;br/&gt; &lt;!-- newline break --&gt;
+&lt;img src=&quot;myimage.jpg&quot;/&gt; &lt;!-- image with no text value --&gt;
+&lt;input type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot;/&gt; &lt;!-- input field --&gt;
+</code></pre>
                 
               
               
