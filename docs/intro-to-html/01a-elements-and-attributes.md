@@ -34,3 +34,15 @@ The following is the same as the markup above:
 If you are new to markup languages, this terminology of "elements" and "attributes" and the rules will seem a bit odd at first.  However, as you begin to use it you will learn to
 appreciate how allowing us to be flexible with the way spaces are used when
 we create the HTML files to be convenient.  It allows us to use consistent rules for how to display the test on a web page.
+
+## Empty Elements
+There are some places in an HTML file where the contents of the element is empty. For these elements there is no end element and you add a forward slash
+before the greater then.
+
+Examples of empty elements:
+
+```html
+<br/> <!-- newline break -->
+<img src="myimage.jpg"/> <!-- image with no text value -->
+<input type="text" id="firstName" name="firstName"/> <!-- input field -->
+```

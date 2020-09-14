@@ -39,8 +39,11 @@ This is just a simple list with markers called "bullets" at the front of every n
 </ol>
 
 ## Definition lists
-These are lists that have a definition title (```<dt>```) at the front of each item.  The item then has a definition description ```<dd>``` right after the title.  Each item can have it's own distinct label.  Definition lists are ideal for creating a dictionary list where the label
+These are lists that have a definition title (```<dt>```) at the front of each item.  The item then has a definition description ```<dd>``` right after the title.  Each item can have it's own distinct label.  Definition lists are ideal for creating a dictionary list where the label is the term and the description is the definition of the word.
 
+Here is an example of a definition list.
+
+<div style="border 1px solid black">
 <dl>
   <dt>Engage</dt>
   <dd>Where we introdce our topic and any backround motivation.</dd>
@@ -57,3 +60,4 @@ These are lists that have a definition title (```<dt>```) at the front of each i
   <dt>Evaluate</dt>
   <dd>Where we check if the students compenhend the lesson</dd>
 </dl>
+<div>
