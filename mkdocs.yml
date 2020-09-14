@@ -19,6 +19,9 @@ nav:
     - Line: svg/03-line.md
     - Rectangle: svg/04-rectangle.md
     - Ellipse: svg/05-ellipse.md
+    - Polygon: svg/06-polygon.md
+    - Polyline: svg/07-polyline.md
+    - Path: svg/08-path.md
   - Learning Objectives: leaning-objectives.md
   - Resources: resources.md
   - Contact: contact.md

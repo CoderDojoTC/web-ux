@@ -8,7 +8,7 @@
 4. SVG Line
 5. SVG Rectangle
 6. SVG Ellipse
-7. SVG Polygon
+7. SVG Polygon - used to create hexigons, octogons and stars
 8. SVG Polyline
 9. SVG Path
 10. SVG Text
