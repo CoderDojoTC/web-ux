@@ -33,7 +33,7 @@ repo_url: 'https://github.com/CoderDojoTC/web-ux'
 edit_uri: 'blob/master/docs'
 theme:
   name: material
-  logo: img/coderdojo-logo.png
+  logo: img/coderdojo-logo.jpg
   palette:
     primary: '#642580'
     accent: '#41BAC1'
