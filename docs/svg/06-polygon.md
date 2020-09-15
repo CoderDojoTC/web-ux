@@ -2,7 +2,7 @@
 
 A polygon is a figure with an arbitrary number of straight sides.  We can use the ```polygon``` element to make many different shapes such as triangles, hexagons and octagons.
 
-To draw a polygon we use a ```points``` attribute to specify each of the x,y pairs we need to draw the polygon.  Here is an example of a blue trinagle:
+To draw a polygon we use a ```points``` attribute to specify each of the x,y pairs we need to draw the polygon.  Here is an example of a blue triangle:
 
 ## Drawing a Triangle
 ```html

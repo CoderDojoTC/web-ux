@@ -7,7 +7,7 @@ HTML is composed of a tree-structure of things called "elements".  Just like a t
 * The begin tag can have many attributes which are name-value pairs
 * The name-value pairs are composed of attribute names, followed by an equal sign, followed by the attribute values surrounded by double quotes
 * The begin and end tags surround the element text.  This is usually the leaf element or other branch elements
-* The element text is followed by an end tag.  Note that the end tag has the same characters as a begin tag but it also has a forwad slash after the less-than character.
+* The element text is followed by an end tag.  Note that the end tag has the same characters as a begin tag but it also has a forward slash after the less-than character.
 
 What is difficult to understand is that elements can contain other elements which in turn can contain other elements.  Here is an example of this tree structure:
 

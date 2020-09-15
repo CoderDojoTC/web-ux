@@ -5,7 +5,7 @@ Here is an example of adding bold and italic to a paragraph of text.
 ```html
 <p>HTML allows us to add <b>bold</b> to any text that we want to
  <b>emphasize.</b>.  We can also add <i>italic</i> text or a 
- combination of both<b><i>bold and italic</i></b>.
+ combination of both <b><i>bold and italic</i></b>.
 </p>
 ```
 Which will render like this:
@@ -34,13 +34,13 @@ You can also use some greek letters if you know how to encode them.  Here the gr
 ```html
 <p>The formula:<br/>
    e<sup>i&pi;</sup>= -1<br/>
-is one of the most elegent formulas in mathematics
+is one of the most elegant formulas in mathematics
 </p>
 ```
 
 <p>The formula:<br/>
    e<sup>i&pi;</sup>= -1<br/>
-is one of the most elegent formulas in mathematics
+is one of the most elegant formulas in mathematics
 </p>
 
 ### Subscripts

@@ -21,7 +21,7 @@ In this example, we will shrink the image down to 50X50 pixels:
 ## Relative vs Absolute Paths
 There are two ways to reference an image.  Both methods have pros and cons.  If you are deploying a single web site that you want consistent behavior, it is best to include all the images in your own web site and then use a relative path to the images.  If you want to share images between multiple areas of the web site they should be place in a common folder, typically named the ```img``` folder.  Relative paths start with that folder name.
 
-The alternative is to directly reference images on the web using a full URL that starts with ```http://```.  This has the advantage of being portable as long as that the path to the image does not change.  However, you sometimes can't guantee that a remote web site will not move images around or change their file names.  So to be fully in control of your image references, use a relative path.
+The alternative is to directly reference images on the web using a full URL that starts with ```http://```.  This has the advantage of being portable as long as that the path to the image does not change.  However, you sometimes can't guarantee that a remote web site will not move images around or change their file names.  So to be fully in control of your image references, use a relative path.
 
 ## Best Practice for Fast Web Page Loading
 You also want to be aware of the size of your images.  For most web pages, a size of around 10K for small images is fine.  Most cameras today store images in large files of several megabytes.  Make sure you use a tool to reduce the size of these images before you add them to your web page.

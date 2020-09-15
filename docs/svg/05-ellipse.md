@@ -26,5 +26,5 @@ Note that the second line has the color and width of the border.
            fill="yellow" stroke-width="3"; stroke="purple" />
 </svg>
 
-Note that the first line is about positioning and size.  The properties in teh second line can
-also be determined by SVC CSS properties.
+Note that the first line is about positioning and size.  The properties in the second line can
+also be determined by SVG CSS properties.
