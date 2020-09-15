@@ -154,15 +154,3 @@ Radio buttons are very similar to the selection list in that only one item is se
         <br/>
     <form>
 </div>
-
-<form onSubmit={handleSubmit}>
-<FormControl component="fieldset">
-  <FormLabel component="legend">Gender</FormLabel>
-  <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-    <FormControlLabel value="female" control={<Radio />} label="Female" />
-    <FormControlLabel value="male" control={<Radio />} label="Male" />
-    <FormControlLabel value="other" control={<Radio />} label="Other" />
-    <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
-  </RadioGroup>
-</FormControl>
-</form>
