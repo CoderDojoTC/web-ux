@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.1">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.71dfd922.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
       
       
         
@@ -55,7 +55,6 @@
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
   
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -75,7 +74,7 @@
   <nav class="md-header-nav md-grid" aria-label="Header">
     <a href="../.." title="CoderDojo TC Web-UX" class="md-header-nav__button md-logo" aria-label="CoderDojo TC Web-UX">
       
-  <img src="../../img/coderdojo-logo.png" alt="logo">
+  <img src="../../img/coderdojo-logo.jpg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -161,7 +160,7 @@
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="CoderDojo TC Web-UX" class="md-nav__button md-logo" aria-label="CoderDojo TC Web-UX">
       
-  <img src="../../img/coderdojo-logo.png" alt="logo">
+  <img src="../../img/coderdojo-logo.jpg" alt="logo">
 
     </a>
     CoderDojo TC Web-UX
@@ -567,7 +566,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../leaning-objectives/" title="Learning Objectives" class="md-nav__link">
+    <a href="../../learning-objectives/" title="Learning Objectives" class="md-nav__link">
       Learning Objectives
     </a>
   </li>
@@ -703,7 +702,7 @@
 &lt;/form&gt;
 </code></pre>
 
-<p>The action attribute is the place where the form data is sent.  Usually HTML forms send their data via an HTTP POST function.  The submit input just before the form close tag is the button that the user presses.  All the rest of the form consists of labels and inputs in pairs.  Sometimes the labels and input pairs are on the same line, and sometimes they are each on their own line. In some inputs such as checkboxs and radio button the label occurs before the input. You can use CSS to determine how your form is styled.</p>
+<p>The action attribute is the place where the form data is sent.  Usually HTML forms send their data via an HTTP POST function.  The submit input just before the form close tag is the button that the user presses.  All the rest of the form consists of labels and inputs in pairs.  Sometimes the labels and input pairs are on the same line, and sometimes they are each on their own line. In some inputs such as checkboxes and radio button the label occurs before the input. You can use CSS to determine how your form is styled.</p>
 <p>Here are the different types of input fields:</p>
 <ol>
 <li><strong>Input fields</strong> - a single line of input</li>
@@ -825,18 +824,6 @@ Enter your notes here.
         <br/>
     <form>
 </div>
-
-<form onSubmit={handleSubmit}>
-<FormControl component="fieldset">
-  <FormLabel component="legend">Gender</FormLabel>
-  <RadioGroup aria-label="gender" name="gender1" value={value} onChange={handleChange}>
-    <FormControlLabel value="female" control={<Radio />} label="Female" />
-    <FormControlLabel value="male" control={<Radio />} label="Male" />
-    <FormControlLabel value="other" control={<Radio />} label="Other" />
-    <FormControlLabel value="disabled" disabled control={<Radio />} label="(Disabled option)" />
-  </RadioGroup>
-</FormControl>
-</form>
                 
               
               
@@ -901,14 +888,14 @@ Enter your notes here.
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
