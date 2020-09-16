@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71dfd922.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -55,6 +55,7 @@
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
   
+    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -532,6 +533,26 @@
     Sawtooth vs Sine Wave
   </a>
   
+    <nav class="md-nav" aria-label="Sawtooth vs Sine Wave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sawtooth-with-quadratic-curve" class="md-nav__link">
+    Sawtooth with Quadratic Curve
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sawtooth-with-cubic-curve" class="md-nav__link">
+    Sawtooth with Cubic Curve
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -633,6 +654,26 @@
     Sawtooth vs Sine Wave
   </a>
   
+    <nav class="md-nav" aria-label="Sawtooth vs Sine Wave">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sawtooth-with-quadratic-curve" class="md-nav__link">
+    Sawtooth with Quadratic Curve
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sawtooth-with-cubic-curve" class="md-nav__link">
+    Sawtooth with Cubic Curve
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -694,8 +735,13 @@ area and then use relative horizontal and vertical drawing commands from that in
 <h2 id="curve-commands">Curve commands</h2>
 <p>Now that you have the basics of path commands drawing straight lines, lets have some fun with drawing curves.  You can always draw curves with lots and lots of small short lines.  But it is very inefficient to send thousands of little drawing commands to the web browser.  What if we could just tell
 the web browser to draw a graceful curve between points?  That is where the SVG Path Curve command comes in handy.</p>
+<p>To create a curve you need to:
+1. Define the endpoints - the start and the end of the curve.
+2. Supply one or two "control points" that govern the general shape of the curve.</p>
+<p>A Bézier curve with one control point is called a quadratic Bézier curve (Q command) and the kind with two control points is called cubic (C command).</p>
 <ul>
 <li>C - Draw a Cubic Bézier curve using x1 y1, x2 y2 and x y</li>
+<li>Q - Draw a Quadradic Bézier curve using x1 y1, x2 y2 and x y</li>
 </ul>
 <p>Here is the SVG code that draws a curve from (10,10) through 100,100 and ends at (200, 10).</p>
 <pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
@@ -726,13 +772,29 @@ We also tell the direction to proceed from the origin (in a diagonal line from 1
    stroke="black" fill="none" stroke-width="3"/>
     <path d="M 0,50 L 700,50" fill="none" stroke="silver" stroke-width="1">
 </svg></p>
+<p>Here is the same wave using curves:</p>
+<h3 id="sawtooth-with-quadratic-curve">Sawtooth with Quadratic Curve</h3>
 <p><svg width="700" height="110">
-   <path d="M 0,0 C 50,0 25,25 50,50 C 50,100 150,50 200,0" 
-   stroke="black" fill="none" stroke-width="3"/>
+   <path d="M 0,0 Q0,0 100,100 Q100,100 200,0 Q200,0 300,100 Q300,100 400,0" 
+   stroke="blue" fill="none" stroke-width="3"/>
 </svg></p>
-<p><svg width = "150px" height = "200px" viewBox = "0 0 100 100">
-         <path stroke = "black" fill = "none" d = "M0,0 C36.42,0 70.58,100 100,100" />
+<h3 id="sawtooth-with-cubic-curve">Sawtooth with Cubic Curve</h3>
+<p>TBD get a simple sawtooth with curves:
+<svg width="150px" height = "200px">
+    <path d="M0,0 C36.42,0 70.58,100 100,100" 
+    stroke="black" fill = "none"/>
 </svg></p>
+<p>Sample top to bottom:</p>
+<p><svg width="150px" height = "200px">
+    <path  d="M0,0 C36.42,0 70.58,100 100,100 C100,0" 
+    stroke = "black" stroke-width="3" fill = "none"/>
+</svg></p>
+<p>Pull up with magnets:</p>
+<p><svg width="400px" height = "150px">
+   <path d="M 0,50 L 700,50" fill="none" stroke="silver" stroke-width="1"/>
+   <path d="M0,50 C50,0 100,-50 150,100 C200,0 250,50 300,100"
+      stroke = "green" stroke-width="2" fill = "none"/></p>
+<p></svg></p>
                 
               
               
@@ -797,14 +859,14 @@ We also tell the direction to proceed from the origin (in a diagonal line from 1
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
+            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
