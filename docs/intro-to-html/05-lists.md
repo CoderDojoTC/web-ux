@@ -2,7 +2,7 @@
 
 HTML has several types of lists:
 
-1. Unorder lists
+1. Unordered lists
 2. Ordered Lists
 3. Definition Lists
 
@@ -46,7 +46,7 @@ Here is an example of a definition list.
 <div style="border 1px solid black">
 <dl>
   <dt>Engage</dt>
-  <dd>Where we introdce our topic and any backround motivation.</dd>
+  <dd>Where we introduce our topic and any background motivation.</dd>
   <dt>Elicit</dt>
   <dd>Where we ask the students what their prior knowledge and how it might be related to the new topic.</dd>
   <dt>Explore<dt>
@@ -58,6 +58,6 @@ Here is an example of a definition list.
   <dt>Extend<dt>
   <dd>Where we ask students to extend the example code.</dd>
   <dt>Evaluate</dt>
-  <dd>Where we check if the students compenhend the lesson</dd>
+  <dd>Where we check if the students comprehend the lesson</dd>
 </dl>
 <div>

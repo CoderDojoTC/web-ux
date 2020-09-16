@@ -73,10 +73,7 @@ Note that there are a few differences.  We don't just add the center point of th
 We also tell the direction to proceed from the origin (in a diagonal line from 10,10 to 20,20) is one additional point.  The center point of the curve is 100,100 and the final point is 200,10
 
 ## Sawtooth vs Sine Wave
-A sawtooth wave is a wave that has straight lines that go from a minimum to a maximum values between
-the top and bottom of the waves.
-
-### Sawtooth Path
+A sawtooth wave is a wave that has straight lines that go from a minimum to a maximum.
 ```html
 <svg width="700" height="110">
    <path d="M 0,0 L 100,100 L 200,0 L 300,100 L 400,0 L 500,100 L 600,0 L 700,100 L 800,0" 

@@ -1,5 +1,5 @@
 # HTML Tables
-Tables allow us to place content in regular rows and columns within a region of a page.  Tables can be used to place text into two columns to make it easer to read, but they can also be used to create complex displays of reports that include header descriptions and footer totals.
+Tables allow us to place content in regular rows and columns within a region of a page.  Tables can be used to place text into two columns to make it easier to read, but they can also be used to create complex displays of reports that include header descriptions and footer totals.
 
 We will start with a simple description of a table and then build a more detailed example.
 
