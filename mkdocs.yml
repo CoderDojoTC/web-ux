@@ -13,6 +13,10 @@ nav:
     - Links: intro-to-html/07-links.md
     - Tables: intro-to-html/08-tables.md
     - Forms: intro-to-html/09-forms.md
+  - Introduction to CSS:
+    - Introduction: css/00_intro.md
+    - Lab 1: css/01-lab.md
+    - Lab 2: css/02-lab.md
   - Web Drawing with SVG:
     - Introduction: svg/01-intro.md
     - Circle: svg/02-circle.md
