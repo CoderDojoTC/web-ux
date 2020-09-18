@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -466,7 +466,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/00_intro/" title="Introduction" class="md-nav__link">
+    <a href="../../00-intro.md" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -478,7 +478,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/01-lab/" title="Lab 1" class="md-nav__link">
+    <a href="../../01-lab.md" title="Lab 1" class="md-nav__link">
       Lab 1
     </a>
   </li>
@@ -490,7 +490,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/02-lab/" title="Lab 2" class="md-nav__link">
+    <a href="../../02-lab.md" title="Lab 2" class="md-nav__link">
       Lab 2
     </a>
   </li>
@@ -511,13 +511,115 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
+      Introduction to Javascript
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Introduction to Javascript" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Introduction to Javascript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/02-variables/" title="Variables" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/03-operators/" title="Operators" class="md-nav__link">
+      Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/04-conditionals/" title="Conditionals" class="md-nav__link">
+      Conditionals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/05-functions/" title="Functions" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/06-events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/07-bringing-it-together/" title="Bring it all together" class="md-nav__link">
+      Bring it all together
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
       Web Drawing with SVG
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Web Drawing with SVG" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -750,24 +852,37 @@
                   
                 
                 
-                <h1 id="html-forms">HTML Forms</h1>
+                <h1 id="html-forms">HTML Forms<a class="headerlink" href="#html-forms" title="Permanent link">&para;</a></h1>
 <p>In this lab we will learn to create HTML forms that allow us to gather different types of input from users and send the users information to a file or a database.</p>
-<h2 id="form-structure">Form Structure</h2>
+<h2 id="form-structure">Form Structure<a class="headerlink" href="#form-structure" title="Permanent link">&para;</a></h2>
 <p>Form all have the following structure:</p>
-<pre><code class="html">&lt;form action=&quot;/http-put-service&quot;&gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;/http-put-service&quot;</span><span class="p">&gt;</span>
 
-    &lt;label&gt;
-    &lt;input&gt;
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span><span class="p">&gt;</span>
 
-    &lt;label&gt;
-    &lt;input&gt;
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span><span class="p">&gt;</span>
 
-    &lt;label&gt;
-    &lt;input&gt;
+    <span class="p">&lt;</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span><span class="p">&gt;</span>
 
-    &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-&lt;/form&gt;
-</code></pre>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Submit&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p>The action attribute is the place where the form data is sent.  Usually HTML forms send their data via an HTTP POST function.  The submit input just before the form close tag is the button that the user presses.  All the rest of the form consists of labels and inputs in pairs.  Sometimes the labels and input pairs are on the same line, and sometimes they are each on their own line. In some inputs such as checkboxes and radio button the label occurs before the input. You can use CSS to determine how your form is styled.</p>
 <p>Here are the different types of input fields:</p>
@@ -778,13 +893,18 @@
 <li><strong>Checkboxes</strong> - check boxes where a user can check many items in a list</li>
 <li><strong>Radio Buttons</strong> - a variation of selection lists were all values are visible</li>
 </ol>
-<h2 id="input-fields">Input Fields</h2>
-<pre><code class="html">&lt;label for=&quot;fname&quot;&gt;First name:&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot;/&gt;
-&lt;label for=&quot;fname&quot;&gt;Last name:&lt;/label&gt;
-&lt;input type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot;/&gt;
-&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;
-</code></pre>
+<h2 id="input-fields">Input Fields<a class="headerlink" href="#input-fields" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;fname&quot;</span><span class="p">&gt;</span>First name:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;firstName&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;firstName&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;fname&quot;</span><span class="p">&gt;</span>Last name:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;firstName&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;firstName&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Submit&quot;</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <div style="border:solid black 1px; background-color:silver">
     <form action="/http-put-service">
@@ -796,15 +916,22 @@
     </form>
 </div>
 
-<h2 id="selection-list">Selection List</h2>
-<pre><code class="html">&lt;label for=&quot;language&quot;&gt;Select your language:&lt;/label&gt;
-&lt;select name=&quot;language&quot; id=&quot;language&quot;&gt;
-  &lt;option value=&quot;python&quot;&gt;Python&lt;/option&gt;
-  &lt;option value=&quot;c&quot;&gt;C&lt;/option&gt;
-  &lt;option value=&quot;java&quot;&gt;Java&lt;/option&gt;
-  &lt;option value=&quot;kotlin&quot;&gt;Kotlin&lt;/option&gt;
-&lt;/select&gt;
-</code></pre>
+<h2 id="selection-list">Selection List<a class="headerlink" href="#selection-list" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;language&quot;</span><span class="p">&gt;</span>Select your language:<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;language&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;language&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;python&quot;</span><span class="p">&gt;</span>Python<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;c&quot;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;java&quot;</span><span class="p">&gt;</span>Java<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;kotlin&quot;</span><span class="p">&gt;</span>Kotlin<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p><label for="fname">Select your language:</label>
 <select name="language" id="language">
@@ -813,12 +940,16 @@
   <option value="java">Java</option>
   <option value="kotlin">Kotlin</option>
 </select></p>
-<h2 id="textarea">Textarea</h2>
-<pre><code class="html">&lt;label for=&quot;notes&quot;&gt;Enter your notes here&lt;/label&gt;&lt;br/&gt;
-&lt;textarea id=&quot;notes&quot; name=&quot;notes&quot; rows=&quot;4&quot; cols=&quot;50&quot;&gt;
+<h2 id="textarea">Textarea<a class="headerlink" href="#textarea" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;notes&quot;</span><span class="p">&gt;</span>Enter your notes here<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+<span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;notes&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;notes&quot;</span> <span class="na">rows</span><span class="o">=</span><span class="s">&quot;4&quot;</span> <span class="na">cols</span><span class="o">=</span><span class="s">&quot;50&quot;</span><span class="p">&gt;</span>
 Enter your notes here.
-&lt;/textarea&gt;
-</code></pre>
+<span class="p">&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <div style="border:solid black 1px; background-color:silver">
     <label for="notes">Enter your notes here</label><br/>
@@ -827,19 +958,29 @@ Enter your notes here.
     </textarea>
 </div>
 
-<h2 id="checkboxes">Checkboxes</h2>
+<h2 id="checkboxes">Checkboxes<a class="headerlink" href="#checkboxes" title="Permanent link">&para;</a></h2>
 <p>We use checkboxes when we have a list of items and each item can have a true or a false value.</p>
-<pre><code class="html">&lt;p&gt;What programming languages do you know?&lt;/p&gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>What programming languages do you know?<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-    &lt;label for=&quot;python&quot;&gt;Python&lt;/label&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;python&quot; name=&quot;python&quot;/&gt;&lt;br/&gt;
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;python&quot;</span><span class="p">&gt;</span>Python<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;python&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;python&quot;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-    &lt;label for=&quot;c&quot;&gt;C&lt;/label&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;c&quot; name=&quot;c&quot;/&gt;&lt;br/&gt;
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;c&quot;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;c&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;c&quot;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-    &lt;label for=&quot;java&quot;&gt;Java&lt;/label&gt;
-    &lt;input type=&quot;checkbox&quot; id=&quot;java&quot; name=&quot;java&quot;/&gt;&lt;br/&gt;
-</code></pre>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;java&quot;</span><span class="p">&gt;</span>Java<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;checkbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;java&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;java&quot;</span><span class="p">/&gt;&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <div style="border:solid black 1px; background-color:silver">
     <p>What programming languages do you know? (check all that apply)</p>
@@ -857,22 +998,35 @@ Enter your notes here.
     <br/>
 </div>
 
-<h2 id="radio-buttons">Radio Buttons</h2>
+<h2 id="radio-buttons">Radio Buttons<a class="headerlink" href="#radio-buttons" title="Permanent link">&para;</a></h2>
 <p>Radio buttons are very similar to the selection list in that only one item is selected at a time.</p>
-<pre><code class="html">&lt;p&gt;What is your favorite language? (select only one item)&lt;/p&gt;
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>What is your favorite language? (select only one item)<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 
-        &lt;input type=&quot;radio&quot; id=&quot;python&quot; name=&quot;python&quot;/&gt;
-        &lt;label for=&quot;python&quot;&gt;Python&lt;/label&gt;
-        &lt;br/&gt;
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;python&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;python&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;python&quot;</span><span class="p">&gt;</span>Python<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-        &lt;input type=&quot;radio&quot; id=&quot;c&quot; name=&quot;c&quot;/&gt;
-        &lt;label for=&quot;c&quot;&gt;C&lt;/label&gt;
-        &lt;br/&gt;
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;c&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;c&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;c&quot;</span><span class="p">&gt;</span>C<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
 
-        &lt;input type=&quot;radio&quot; id=&quot;java&quot; name=&quot;java&quot;/&gt;
-        &lt;label for=&quot;java&quot;&gt;Java&lt;/label&gt;
-        &lt;br/&gt;
-</code></pre>
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;java&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;java&quot;</span><span class="p">/&gt;</span>
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;java&quot;</span><span class="p">&gt;</span>Java<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <div style="border:solid black 1px; background-color:silver">
     <form>
@@ -924,13 +1078,13 @@ Enter your notes here.
             </a>
           
           
-            <a href="../../css/00_intro/" title="Introduction" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <a href="../../intro-to-javascript/02-variables/" title="Variables" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
               <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
                 <span class="md-flex__ellipsis">
                   <span class="md-footer-nav__direction">
                     Next
                   </span>
-                  Introduction
+                  Variables
                 </span>
               </div>
               <div class="md-flex__cell md-flex__cell--shrink">
@@ -955,14 +1109,14 @@ Enter your notes here.
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

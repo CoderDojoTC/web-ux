@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -431,7 +431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/00_intro/" title="Introduction" class="md-nav__link">
+    <a href="../../00-intro.md" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -443,7 +443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/01-lab/" title="Lab 1" class="md-nav__link">
+    <a href="../../01-lab.md" title="Lab 1" class="md-nav__link">
       Lab 1
     </a>
   </li>
@@ -455,7 +455,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/02-lab/" title="Lab 2" class="md-nav__link">
+    <a href="../../02-lab.md" title="Lab 2" class="md-nav__link">
       Lab 2
     </a>
   </li>
@@ -476,13 +476,115 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
+      Introduction to Javascript
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Introduction to Javascript" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Introduction to Javascript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/02-variables/" title="Variables" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/03-operators/" title="Operators" class="md-nav__link">
+      Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/04-conditionals/" title="Conditionals" class="md-nav__link">
+      Conditionals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/05-functions/" title="Functions" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/06-events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/07-bringing-it-together/" title="Bring it all together" class="md-nav__link">
+      Bring it all together
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
       Web Drawing with SVG
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Web Drawing with SVG" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -680,7 +782,7 @@
                   
                 
                 
-                <h1 id="elements-and-attributes">Elements and Attributes</h1>
+                <h1 id="elements-and-attributes">Elements and Attributes<a class="headerlink" href="#elements-and-attributes" title="Permanent link">&para;</a></h1>
 <p>HTML is composed of a tree-structure of things called "elements".  Just like a tree, HTML files have a single root (think of a trunk), many branch elements that contain other elements, and finally leaves of the tree that contain the text that we display on a page. Elements are usually composed of pairs of tags - begin tags and end tags.  Here are the main parts of an element:</p>
 <p><img alt="Element Components" src="../img/element-components.png" /></p>
 <ul>
@@ -691,34 +793,47 @@
 <li>The element text is followed by an end tag.  Note that the end tag has the same characters as a begin tag but it also has a forward slash after the less-than character.</li>
 </ul>
 <p>What is difficult to understand is that elements can contain other elements which in turn can contain other elements.  Here is an example of this tree structure:</p>
-<pre><code class="xml">&lt;root&gt;
-   &lt;branch&gt;
-      &lt;branch&gt;
-         &lt;branch&gt;This is the leaf text.&lt;/branch&gt;
-      &lt;/branch&gt;
-   &lt;/branch&gt;
-&lt;root&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">&lt;root&gt;</span>
+   <span class="nt">&lt;branch&gt;</span>
+      <span class="nt">&lt;branch&gt;</span>
+         <span class="nt">&lt;branch&gt;</span>This is the leaf text.<span class="nt">&lt;/branch&gt;</span>
+      <span class="nt">&lt;/branch&gt;</span>
+   <span class="nt">&lt;/branch&gt;</span>
+<span class="nt">&lt;root&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p>It is also interesting to note that it does not matter where 
 you put newlines (carriage returns) between the branch elements.  HTML will render the same within the browser.</p>
 <p>The following is the same as the markup above:</p>
-<pre><code class="xml">&lt;root&gt;&lt;branch&gt;&lt;branch&gt;
-         &lt;branch&gt;This is the leaf text.&lt;/branch&gt;
-&lt;/branch&gt;&lt;/branch&gt;&lt;root&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">&lt;root&gt;&lt;branch&gt;&lt;branch&gt;</span>
+         <span class="nt">&lt;branch&gt;</span>This is the leaf text.<span class="nt">&lt;/branch&gt;</span>
+<span class="nt">&lt;/branch&gt;&lt;/branch&gt;&lt;root&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p>If you are new to markup languages, this terminology of "elements" and "attributes" and the rules will seem a bit odd at first.  However, as you begin to use it you will learn to
 appreciate how allowing us to be flexible with the way spaces are used when
 we create the HTML files to be convenient.  It allows us to use consistent rules for how to display the test on a web page.</p>
-<h2 id="empty-elements">Empty Elements</h2>
+<h2 id="empty-elements">Empty Elements<a class="headerlink" href="#empty-elements" title="Permanent link">&para;</a></h2>
 <p>There are some places in an HTML file where the contents of the element is empty. For these elements there is no end element and you add a forward slash
 before the greater then.</p>
 <p>Examples of empty elements:</p>
-<pre><code class="html">&lt;br/&gt; &lt;!-- newline break --&gt;
-&lt;img src=&quot;myimage.jpg&quot;/&gt; &lt;!-- image with no text value --&gt;
-&lt;input type=&quot;text&quot; id=&quot;firstName&quot; name=&quot;firstName&quot;/&gt; &lt;!-- input field --&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">br</span><span class="p">/&gt;</span> <span class="c">&lt;!-- newline break --&gt;</span>
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;myimage.jpg&quot;</span><span class="p">/&gt;</span> <span class="c">&lt;!-- image with no text value --&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;firstName&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;firstName&quot;</span><span class="p">/&gt;</span> <span class="c">&lt;!-- input field --&gt;</span>
+</code></pre></div>
+</td></tr></table>
                 
               
               
@@ -783,14 +898,14 @@ before the greater then.</p>
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

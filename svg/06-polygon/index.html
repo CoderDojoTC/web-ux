@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -387,7 +387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/00_intro/" title="Introduction" class="md-nav__link">
+    <a href="../../00-intro.md" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -399,7 +399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/01-lab/" title="Lab 1" class="md-nav__link">
+    <a href="../../01-lab.md" title="Lab 1" class="md-nav__link">
       Lab 1
     </a>
   </li>
@@ -411,8 +411,110 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/02-lab/" title="Lab 2" class="md-nav__link">
+    <a href="../../02-lab.md" title="Lab 2" class="md-nav__link">
       Lab 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Introduction to Javascript
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Introduction to Javascript" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Introduction to Javascript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/02-variables/" title="Variables" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/03-operators/" title="Operators" class="md-nav__link">
+      Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/04-conditionals/" title="Conditionals" class="md-nav__link">
+      Conditionals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/05-functions/" title="Functions" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/06-events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/07-bringing-it-together/" title="Bring it all together" class="md-nav__link">
+      Bring it all together
     </a>
   </li>
 
@@ -431,16 +533,16 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Web Drawing with SVG
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Web Drawing with SVG" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -736,15 +838,19 @@
                   
                 
                 
-                <h1 id="drawing-a-polygon-with-svg">Drawing A Polygon with SVG</h1>
+                <h1 id="drawing-a-polygon-with-svg">Drawing A Polygon with SVG<a class="headerlink" href="#drawing-a-polygon-with-svg" title="Permanent link">&para;</a></h1>
 <p>A polygon is a figure with an arbitrary number of straight sides.  We can use the <code>polygon</code> element to make many different shapes such as triangles, hexagons and octagons.</p>
 <p>To draw a polygon we use a <code>points</code> attribute to specify each of the x,y pairs we need to draw the polygon.  Here is an example of a blue triangle:</p>
-<h2 id="drawing-a-triangle">Drawing a Triangle</h2>
-<pre><code class="html">&lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;
-  &lt;polygon points=&quot;10,90 90,90 50,10&quot;
-     fill=&quot;blue&quot; stroke=&quot;orange&quot; stroke-width=&quot;3&quot; /&gt;
-&lt;/svg&gt;
-</code></pre>
+<h2 id="drawing-a-triangle">Drawing a Triangle<a class="headerlink" href="#drawing-a-triangle" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;10,90 90,90 50,10&quot;</span>
+     <span class="na">fill</span><span class="o">=</span><span class="s">&quot;blue&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;orange&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p>Which renders like this:</p>
 <p><svg height="100" width="100">
@@ -754,50 +860,69 @@
 <p>Note that the first point is in the lower-left corner (x=10, y=90).  The second point is in the right corner (x=90, y=90) and the last point is in the top center (x=50, y=10).</p>
 <p>Note that this triangle is called an isosceles because two of the sides are exactly the same length.
 We don't have to make the edges the same size.  We can move the points to make any arbitrary shape.</p>
-<pre><code class="html">&lt;svg height=&quot;100&quot; width=&quot;100&quot;&gt;
-  &lt;polygon points=&quot;30,90 90,70 40,10&quot;
-     fill=&quot;blue&quot; stroke=&quot;orange&quot; stroke-width=&quot;3&quot; /&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;30,90 90,70 40,10&quot;</span>
+     <span class="na">fill</span><span class="o">=</span><span class="s">&quot;blue&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;orange&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span> <span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p>Which renders like this:</p>
 <p><svg height="100" width="100">
   <polygon points="30,90 90,70 40,10"
      fill="blue" stroke="orange" stroke-width="3" />
 </svg></p>
-<h2 id="drawing-a-hexagon">Drawing A Hexagon</h2>
+<h2 id="drawing-a-hexagon">Drawing A Hexagon<a class="headerlink" href="#drawing-a-hexagon" title="Permanent link">&para;</a></h2>
 <p>A hexagon is a shape with six sides.</p>
-<pre><code class="html">&lt;svg height=&quot;300&quot; width=&quot;300&quot;&gt;
-   &lt;polygon points=&quot;300,150 225,280 75,280 0,150 75,20 225,20&quot;
-     fill=&quot;orange&quot; stroke=&quot;blue&quot; stroke-width=&quot;3&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;300&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;300&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;300,150 225,280 75,280 0,150 75,20 225,20&quot;</span>
+     <span class="na">fill</span><span class="o">=</span><span class="s">&quot;orange&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;blue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p><svg height="300" width="300">
    <polygon points="300,150 225,280 75,280 0,150 75,20 225,20"
      fill="orange" stroke="blue" stroke-width="3"/>
 </svg></p>
-<h2 id="drawing-an-octagon">Drawing an Octagon</h2>
+<h2 id="drawing-an-octagon">Drawing an Octagon<a class="headerlink" href="#drawing-an-octagon" title="Permanent link">&para;</a></h2>
 <p>An Octagon is a shape with eight sides.  You might recognize this as the shape of a STOP sign.</p>
-<pre><code class="html">&lt;svg height=&quot;125&quot; width=&quot;125&quot;&gt;
-   &lt;polygon points=&quot;50,5 100,5 125,30  125,80 100,105 50,105  25,80  25, 30&quot;
-      ill=&quot;red&quot; stroke=&quot;silver&quot; stroke-width=&quot;5&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;125&quot;</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;125&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">polygon</span> <span class="na">points</span><span class="o">=</span><span class="s">&quot;50,5 100,5 125,30  125,80 100,105 50,105  25,80  25, 30&quot;</span>
+      <span class="na">ill</span><span class="o">=</span><span class="s">&quot;red&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;silver&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;5&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p><svg height="125" width="125">
    <polygon points="50,5 100,5 125,30  125,80 100,105 50,105  25,80  25, 30"
       fill="red" stroke="silver" stroke-width="5"/>
 </svg></p>
-<h2 id="five-pointed-star">Five Pointed Star</h2>
-<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
-  &lt;polygon 
-      points=&quot;50,10 55,30 70,30 60,40 65,55 50,45 35,55 40,40 30,30 45,30&quot;
-      stroke=&quot;Blue&quot; 
-      fill=&quot;LightBlue&quot; 
-      stroke-width=&quot;2&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
+<h2 id="five-pointed-star">Five Pointed Star<a class="headerlink" href="#five-pointed-star" title="Permanent link">&para;</a></h2>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">polygon</span> 
+      <span class="na">points</span><span class="o">=</span><span class="s">&quot;50,10 55,30 70,30 60,40 65,55 50,45 35,55 40,40 30,30 45,30&quot;</span>
+      <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;Blue&quot;</span> 
+      <span class="na">fill</span><span class="o">=</span><span class="s">&quot;LightBlue&quot;</span> 
+      <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p><svg width="100" height="100">
   <polygon 
@@ -806,20 +931,31 @@ We don't have to make the edges the same size.  We can move the points to make a
       fill="LightBlue" 
       stroke-width="2"/>
 </svg></p>
-<h2 id="10-pointed-star">10 Pointed Star</h2>
+<h2 id="10-pointed-star">10 Pointed Star<a class="headerlink" href="#10-pointed-star" title="Permanent link">&para;</a></h2>
 <p>Here is what a 10 pointed star looks like in SVG:</p>
-<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
-  &lt;polygon 
-    points=&quot;50,80 65.451,97.553 67.634,74.271 90.451,79.389 78.532,59.271
-    100.000,50.000 78.532,40.729 90.451,20.611 67.634,25.729 65.451,2.447
-    50.000,20.000 34.549,2.447 32.366,25.729 9.549,20.611 21.468,40.729
-    0.000,50.000 21.468,59.271 9.549,79.389 32.366,74.271 34.549,97.553
-    50.000,80.000&quot;
-    stroke=&quot;black&quot; 
-    fill=&quot;yellow&quot; 
-    stroke-width=&quot;2&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">polygon</span> 
+    <span class="na">points</span><span class="o">=</span><span class="s">&quot;50,80 65.451,97.553 67.634,74.271 90.451,79.389 78.532,59.271</span>
+<span class="s">    100.000,50.000 78.532,40.729 90.451,20.611 67.634,25.729 65.451,2.447</span>
+<span class="s">    50.000,20.000 34.549,2.447 32.366,25.729 9.549,20.611 21.468,40.729</span>
+<span class="s">    0.000,50.000 21.468,59.271 9.549,79.389 32.366,74.271 34.549,97.553</span>
+<span class="s">    50.000,80.000&quot;</span>
+    <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> 
+    <span class="na">fill</span><span class="o">=</span><span class="s">&quot;yellow&quot;</span> 
+    <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;2&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p>And here is how that renders:</p>
 <p><svg width="100" height="100">
@@ -900,14 +1036,14 @@ See <a href="https://www.smiffysplace.com/stars.html">SVG Star Generator</a></p>
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>

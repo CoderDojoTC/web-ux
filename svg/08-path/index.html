@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.3.3">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
@@ -387,7 +387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/00_intro/" title="Introduction" class="md-nav__link">
+    <a href="../../00-intro.md" title="Introduction" class="md-nav__link">
       Introduction
     </a>
   </li>
@@ -399,7 +399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/01-lab/" title="Lab 1" class="md-nav__link">
+    <a href="../../01-lab.md" title="Lab 1" class="md-nav__link">
       Lab 1
     </a>
   </li>
@@ -411,8 +411,110 @@
 
 
   <li class="md-nav__item">
-    <a href="../../css/02-lab/" title="Lab 2" class="md-nav__link">
+    <a href="../../02-lab.md" title="Lab 2" class="md-nav__link">
       Lab 2
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Introduction to Javascript
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Introduction to Javascript" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Introduction to Javascript
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/02-variables/" title="Variables" class="md-nav__link">
+      Variables
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/03-operators/" title="Operators" class="md-nav__link">
+      Operators
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/04-conditionals/" title="Conditionals" class="md-nav__link">
+      Conditionals
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/05-functions/" title="Functions" class="md-nav__link">
+      Functions
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/06-events/" title="Events" class="md-nav__link">
+      Events
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../intro-to-javascript/07-bringing-it-together/" title="Bring it all together" class="md-nav__link">
+      Bring it all together
     </a>
   </li>
 
@@ -431,16 +533,16 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
-    <label class="md-nav__link" for="nav-5">
+    <label class="md-nav__link" for="nav-6">
       Web Drawing with SVG
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Web Drawing with SVG" data-md-level="1">
-      <label class="md-nav__title" for="nav-5">
+      <label class="md-nav__title" for="nav-6">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
         </span>
@@ -762,7 +864,7 @@
                   
                 
                 
-                <h1 id="drawing-a-paths-with-svg">Drawing A Paths with SVG</h1>
+                <h1 id="drawing-a-paths-with-svg">Drawing A Paths with SVG<a class="headerlink" href="#drawing-a-paths-with-svg" title="Permanent link">&para;</a></h1>
 <p>Up until now, the SVG examples we were showing you were all pretty simple.  They were
 not very different from the Turtle Graphics drawings that we generated in Scratch or
 with our turtle graphics libraries in Python.  But now we will start to really
@@ -778,27 +880,35 @@ area and then use relative horizontal and vertical drawing commands from that in
 <li>V - move Vertically</li>
 <li>L - draw a line to a given point (Lineto)</li>
 </ol>
-<h2 id="simple-paths-with-move-horizontal-vertical-and-lineto-commands">Simple Paths with Move, Horizontal, Vertical and Lineto Commands</h2>
+<h2 id="simple-paths-with-move-horizontal-vertical-and-lineto-commands">Simple Paths with Move, Horizontal, Vertical and Lineto Commands<a class="headerlink" href="#simple-paths-with-move-horizontal-vertical-and-lineto-commands" title="Permanent link">&para;</a></h2>
 <p>Here is the path element used to draw a simple square</p>
-<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
-  &lt;path d=&quot;M 10,10 H 90 V 90 H 10 L 10,10&quot;
-      fill=&quot;none&quot; stroke=&quot;blue&quot; stroke-width=&quot;3&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&quot;M 10,10 H 90 V 90 H 10 L 10,10&quot;</span>
+      <span class="na">fill</span><span class="o">=</span><span class="s">&quot;none&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;blue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p><svg width="100" height="100">
   <path d="M 10,10 H 90 V 90 H 10 L 10,10"
      fill="none" stroke="blue" stroke-width="3"/>
 </svg></p>
-<h2 id="closing-your-path-with-z">Closing Your Path With "Z"</h2>
+<h2 id="closing-your-path-with-z">Closing Your Path With "Z"<a class="headerlink" href="#closing-your-path-with-z" title="Permanent link">&para;</a></h2>
 <p>Sometimes you don't want to put in that last Lineto command.  You can just use the letter "z" to tell it where to go back to the starting point.</p>
-<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
-  &lt;path d=&quot;M 10,10 H 90 V 90 H 10 Z&quot;
-     fill=&quot;none&quot; stroke=&quot;blue&quot; stroke-width=&quot;3&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&quot;M 10,10 H 90 V 90 H 10 Z&quot;</span>
+     <span class="na">fill</span><span class="o">=</span><span class="s">&quot;none&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;blue&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
-<h2 id="curve-commands">Curve commands</h2>
+<h2 id="curve-commands">Curve commands<a class="headerlink" href="#curve-commands" title="Permanent link">&para;</a></h2>
 <p>Now that you have the basics of path commands drawing straight lines, lets have some fun with drawing curves.  You can always draw curves with lots and lots of small short lines.  But it is very inefficient to send thousands of little drawing commands to the web browser.  What if we could just tell
 the web browser to draw a graceful curve between points?  That is where the SVG Path Curve command comes in handy.</p>
 <p>To create a curve you need to:
@@ -810,11 +920,15 @@ the web browser to draw a graceful curve between points?  That is where the SVG 
 <li>Q - Draw a Quadradic Bézier curve using x1 y1, x2 y2 and x y</li>
 </ul>
 <p>Here is the SVG code that draws a curve from (10,10) through 100,100 and ends at (200, 10).</p>
-<pre><code class="html">&lt;svg width=&quot;100&quot; height=&quot;100&quot;&gt;
-   &lt;path d=&quot;M 10,10 C 20,20 100,100 200,10&quot; 
-   stroke=&quot;black&quot; fill=&quot;transparent&quot;/&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;100&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;100&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&quot;M 10,10 C 20,20 100,100 200,10&quot;</span> 
+   <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;transparent&quot;</span><span class="p">/&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p>Here is what it looks like:</p>
 <p><svg width="200" height="100">
@@ -823,15 +937,21 @@ the web browser to draw a graceful curve between points?  That is where the SVG 
 </svg></p>
 <p>Note that there are a few differences.  We don't just add the center point of the curve.
 We also tell the direction to proceed from the origin (in a diagonal line from 10,10 to 20,20) is one additional point.  The center point of the curve is 100,100 and the final point is 200,10</p>
-<h2 id="sawtooth-vs-sine-wave">Sawtooth vs Sine Wave</h2>
+<h2 id="sawtooth-vs-sine-wave">Sawtooth vs Sine Wave<a class="headerlink" href="#sawtooth-vs-sine-wave" title="Permanent link">&para;</a></h2>
 <p>A sawtooth wave is a wave that has straight lines that go from a minimum to a maximum.</p>
-<pre><code class="html">&lt;svg width=&quot;700&quot; height=&quot;110&quot;&gt;
-   &lt;path d=&quot;M 0,0 L 100,100 L 200,0 L 300,100 L 400,0 L 500,100 L 600,0 L 700,100 L 800,0&quot; 
-   stroke=&quot;black&quot; fill=&quot;none&quot; stroke-width=&quot;3&quot;/&gt;
-   &lt;!-- This is the axis line --&gt;
-   &lt;path d=&quot;M 0,50 L 700,50&quot; fill=&quot;none&quot; stroke=&quot;silver&quot; stroke-width=&quot;1&quot;&gt;
-&lt;/svg&gt;
-</code></pre>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">svg</span> <span class="na">width</span><span class="o">=</span><span class="s">&quot;700&quot;</span> <span class="na">height</span><span class="o">=</span><span class="s">&quot;110&quot;</span><span class="p">&gt;</span>
+   <span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&quot;M 0,0 L 100,100 L 200,0 L 300,100 L 400,0 L 500,100 L 600,0 L 700,100 L 800,0&quot;</span> 
+   <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;black&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;none&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;3&quot;</span><span class="p">/&gt;</span>
+   <span class="c">&lt;!-- This is the axis line --&gt;</span>
+   <span class="p">&lt;</span><span class="nt">path</span> <span class="na">d</span><span class="o">=</span><span class="s">&quot;M 0,50 L 700,50&quot;</span> <span class="na">fill</span><span class="o">=</span><span class="s">&quot;none&quot;</span> <span class="na">stroke</span><span class="o">=</span><span class="s">&quot;silver&quot;</span> <span class="na">stroke-width</span><span class="o">=</span><span class="s">&quot;1&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">svg</span><span class="p">&gt;</span>
+</code></pre></div>
+</td></tr></table>
 
 <p><svg width="700" height="110">
    <path d="M 0,0 L 100,100 L 200,0 L 300,100 L 400,0 L 500,100 L 600,0 L 700,100 L 800,0" 
@@ -839,12 +959,12 @@ We also tell the direction to proceed from the origin (in a diagonal line from 1
     <path d="M 0,50 L 700,50" fill="none" stroke="silver" stroke-width="1">
 </svg></p>
 <p>Here is the same wave using curves:</p>
-<h3 id="sawtooth-with-quadratic-curve">Sawtooth with Quadratic Curve</h3>
+<h3 id="sawtooth-with-quadratic-curve">Sawtooth with Quadratic Curve<a class="headerlink" href="#sawtooth-with-quadratic-curve" title="Permanent link">&para;</a></h3>
 <p><svg width="700" height="110">
    <path d="M 0,0 Q0,0 100,100 Q100,100 200,0 Q200,0 300,100 Q300,100 400,0" 
    stroke="blue" fill="none" stroke-width="3"/>
 </svg></p>
-<h3 id="sawtooth-with-cubic-curve">Sawtooth with Cubic Curve</h3>
+<h3 id="sawtooth-with-cubic-curve">Sawtooth with Cubic Curve<a class="headerlink" href="#sawtooth-with-cubic-curve" title="Permanent link">&para;</a></h3>
 <p>TBD get a simple sawtooth with curves:
 <svg width="150px" height = "200px">
     <path d="M0,0 C36.42,0 70.58,100 100,100" 
@@ -925,14 +1045,14 @@ We also tell the direction to proceed from the origin (in a diagonal line from 1
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.4a5ba8d6.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.9b3611bd.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
