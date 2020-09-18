@@ -13,6 +13,13 @@ nav:
     - Links: intro-to-html/07-links.md
     - Tables: intro-to-html/08-tables.md
     - Forms: intro-to-html/09-forms.md
+  - Introduction to Javascript:
+    - Variables: intro-to-javascript/02-variables.md
+    - Operators: intro-to-javascript/03-operators.md
+    - Conditionals: intro-to-javascript/04-conditionals.md
+    - Functions: intro-to-javascript/05-functions.md
+    - Events: intro-to-javascript/06-events.md
+    - Bring it all together: intro-to-javascript/07-bringing-it-together.md
   - Web Drawing with SVG:
     - Introduction: svg/01-intro.md
     - Circle: svg/02-circle.md
