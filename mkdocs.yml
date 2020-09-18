@@ -59,4 +59,3 @@ markdown_extensions:
       linenums: true
 plugins:
     - search
-markdown_extensions:
