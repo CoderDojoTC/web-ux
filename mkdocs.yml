@@ -14,9 +14,9 @@ nav:
     - Tables: intro-to-html/08-tables.md
     - Forms: intro-to-html/09-forms.md
   - Introduction to CSS:
-    - Introduction: 00-intro.md
-    - Lab 1: 01-lab.md
-    - Lab 2: 02-lab.md
+    - Introduction: css/00-intro.md
+    - Lab 1: css/01-lab.md
+    - Lab 2: css/02-lab.md
   - Introduction to Javascript:
     - Variables: intro-to-javascript/02-variables.md
     - Operators: intro-to-javascript/03-operators.md
