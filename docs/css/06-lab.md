@@ -12,14 +12,16 @@ CSS:
 }
 ``` 
 
-Note: Listing multiple words with the quotes after class= means that element has several classes. Also, the first class for each list element below is the mountain range and the following classes are the country/countries that mountain is in according to the source I found.
+Note: < is a reserved character in HTML, and the browser may get confused if you use it as the less than character in text. Therefore, use `&entity_name;` or `&#entity_number;`. Entity numbers have wider support. Also, listing multiple words with the quotes after class= means that element has several classes. 
+
+Note on the content: the first class for each list element below is the mountain range and the following classes are the country/countries that mountain is in according to the source I found.
 
 HTML:
 ```html
 <!DOCTYPE html>
 <html lang="en">
    <body>
-     <h3>Mountains that reach an elevation > 8,000 metres (26,247 ft)</h3>
+     <h3>Mountains that reach an elevation &lt; 8,000 metres (26,247 ft)</h3>
      <ol>
        <li class="Himalayas Nepal China">Mount Everest</li>
        <li class="Karakoram Pakistan">K2</li>
@@ -47,7 +49,7 @@ A website would combine the above CSS and HTML to show:
 
 # Link to Example
 
-[Test on JSFiddle](https://jsfiddle.net/k_staple/tva7gz9m/7/)
+[Test on JSFiddle](https://jsfiddle.net/k_staple/tva7gz9m/12/)
 
 Note: if you click on a link in JSFiddle instead of right clicking and opening in a new tab, you can always hit run again in the JSFiddle window.
 
@@ -56,3 +58,4 @@ Note: if you click on a link in JSFiddle instead of right clicking and opening i
 # Experiment Ideas
 1. Change which two classes you're selecting.
 2. Use [this list of css selectors](https://www.w3schools.com/cssref/css_selectors.asp) to test other ways to select HTML elements
+3. [To talk more about HTML entities, click here](https://www.w3schools.com/html/html_entities.asp)
