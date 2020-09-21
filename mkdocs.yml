@@ -1,65 +1,48 @@
-site_name: 'CoderDojo TC Web-UX'
+site_name: 'show_CSS_examples'
 nav:
-  - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
-  - Home: index.md
-  - Intoduction to HTML:
-    - Introduction: intro-to-html/01-intro.md
-    - Elements and Attributes: intro-to-html/01a-elements-and-attributes.md
-    - HTML File Structure: intro-to-html/02-html-structure.md
-    - Headings: intro-to-html/03-headings.md
-    - Bold and Italic: intro-to-html/04-bold-and-italic.md
-    - Lists: intro-to-html/05-lists.md
-    - Images: intro-to-html/06-images.md
-    - Links: intro-to-html/07-links.md
-    - Tables: intro-to-html/08-tables.md
-    - Forms: intro-to-html/09-forms.md
+  - Home:
+    - Home: home/home.md
+  - Documentation:
+    - Documentation: documentation/documentation.md
   - Introduction to CSS:
     - Introduction: css/00-intro.md
     - Lab 1: css/01-lab.md
     - Lab 2: css/02-lab.md
-  - Introduction to Javascript:
-    - Variables: intro-to-javascript/02-variables.md
-    - Operators: intro-to-javascript/03-operators.md
-    - Conditionals: intro-to-javascript/04-conditionals.md
-    - Functions: intro-to-javascript/05-functions.md
-    - Events: intro-to-javascript/06-events.md
-    - Bring it all together: intro-to-javascript/07-bringing-it-together.md
-  - Web Drawing with SVG:
-    - Introduction: svg/01-intro.md
-    - Circle: svg/02-circle.md
-    - Line: svg/03-line.md
-    - Rectangle: svg/04-rectangle.md
-    - Ellipse: svg/05-ellipse.md
-    - Polygon: svg/06-polygon.md
-    - Polyline: svg/07-polyline.md
-    - Path: svg/08-path.md
-  - Learning Objectives: learning-objectives.md
-  - Resources: resources.md
-  - Contact: contact.md
+    - Lab 3: css/03-lab.md
+    - Lab 4: css/04-lab.md
+    - Lab 5: css/05-lab.md
+    - Lab 6: css/06-lab.md
+    - Lab 7: css/07-lab.md
+  - Getting Started:
+    - Getting Started: getting-started/getting-started.md
+  - Support:
+    - Support: support/support.md
+    - Team: support/team.md
+    - Contact: support/contact.md
 
-site_description: 'Resources for teaching Web and UX to CoderDojo Twin Cities students.'
-site_author: 'Dan McCreary'
-repo_name: 'web-ux'
-repo_url: 'https://github.com/CoderDojoTC/web-ux'
+repo_name: 'show_CSS_examples'
+repo_url: 'https://github.optum.com/kstaple3/show_CSS_examples'
 edit_uri: 'blob/master/docs'
+copyright: 'Copyright &copy; 2020 Optum'
 theme:
   name: material
-  logo: img/coderdojo-logo.jpg
   palette:
-    primary: '#642580'
-    accent: '#41BAC1'
+    primary: 'blue'
+    accent: 'blue'
   feature:
     tabs: true
   custom_dir: 'theme'
-  include_sidebar: true
+  favicon: img/favicon.ico
+  logo: img/optum-white.png
+  font:
+    text: Arial
+    code: Roboto Mono
+extra_css:
+  - styles/optum-theme.css
 markdown_extensions:
-  - codehilite
   - admonition
-  - attr_list
   - footnotes
   - toc:
       permalink: true
   - codehilite:
       linenums: true
-plugins:
-    - search
