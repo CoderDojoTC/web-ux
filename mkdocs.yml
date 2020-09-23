@@ -24,6 +24,7 @@ nav:
     - Lab 7: css/07-lab.md
     - Lab 8: css/08-lab.md
   - Introduction to Javascript:
+    - Introduction: intro-to-javascript/01-introduction.md
     - Variables: intro-to-javascript/02-variables.md
     - Operators: intro-to-javascript/03-operators.md
     - Conditionals: intro-to-javascript/04-conditionals.md
