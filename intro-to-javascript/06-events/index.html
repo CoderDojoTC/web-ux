@@ -15,7 +15,7 @@
         <meta name="author" content="Dan McCreary">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.2.1">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.71dfd922.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.616af814.min.css">
       
       
         
@@ -55,7 +55,6 @@
     
     <body dir="ltr" data-md-color-scheme="" data-md-color-primary="#642580" data-md-color-accent="#41bac1">
   
-    
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
@@ -527,6 +526,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../01-introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../02-variables/" title="Variables" class="md-nav__link">
       Variables
     </a>
@@ -805,7 +816,63 @@
                 
                 
                 <h1 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h1>
-<p>Coming soon</p>
+<p>Events are actions or occurrences that happen in the system you are programming, which the system tells you about so you can respond to them in some way if desired. For example, if the user selects a button on a webpage, you might want to respond to that action by displaying an information box</p>
+<p>In the case of the Web, events are fired inside the browser window, and tend to be attached to a specific item that resides in it — this might be a single element, set of elements, the HTML document loaded in the current tab, or the entire browser window. There are many different types of events that can occur. For example:</p>
+<ul>
+<li>The user selects a certain element or hovers the cursor over a certain element.</li>
+<li>The user chooses a key on the keyboard.</li>
+<li>The user resizes or closes the browser window.</li>
+<li>A web page finishes loading.</li>
+<li>A form is submitted.</li>
+<li>A video is played, paused, or finishes.</li>
+<li>An error occurs.</li>
+</ul>
+<p>Each event can have an event handler, which is a block of code (usually a JavaScript function that you as a programmer create) that runs when the event fires.</p>
+<p>Let's use a button click event as an example to learn how we can create event handlers. You've probably seen events and event handlers used in some of the other examples, but let's take a closer look. First we need to create a button so that we have an html element to click on. Place the following code in your html body:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="nt">&lt;button&gt;</span>Change color<span class="nt">&lt;/button&gt;</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Now we need the JavaScript to handle the click event. Place the following in your script.js file:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="n">const</span> <span class="n">btn</span> <span class="o">=</span> <span class="n">document</span><span class="p">.</span><span class="n">querySelector</span><span class="p">(</span><span class="s1">&#39;button&#39;</span><span class="p">);</span>
+
+<span class="k">function</span> <span class="n">random</span><span class="p">(</span><span class="nb">number</span><span class="p">)</span> <span class="err">{</span>
+  <span class="k">return</span> <span class="n">Math</span><span class="p">.</span><span class="n">floor</span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="n">random</span><span class="p">()</span> <span class="o">*</span> <span class="p">(</span><span class="nb">number</span><span class="o">+</span><span class="mi">1</span><span class="p">));</span>
+<span class="err">}</span>
+
+<span class="n">btn</span><span class="p">.</span><span class="n">onclick</span> <span class="o">=</span> <span class="k">function</span><span class="p">()</span> <span class="err">{</span>
+  <span class="n">const</span> <span class="n">rndCol</span> <span class="o">=</span> <span class="s1">&#39;rgb(&#39;</span> <span class="o">+</span> <span class="n">random</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="n">random</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;,&#39;</span> <span class="o">+</span> <span class="n">random</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;)&#39;</span><span class="p">;</span>
+  <span class="n">btn</span><span class="p">.</span><span class="n">style</span><span class="p">.</span><span class="n">background</span> <span class="o">=</span> <span class="n">rndCol</span><span class="p">;</span>
+<span class="err">}</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>Run the site and you should be able to see the button color change when you click on it.</p>
+<p>In this code, we store a reference to the button inside a constant called btn, using the Document.querySelector() function. We also define a function that returns a random number. The third part of the code is the event handler. The btn constant points to a button element, and this type of object has a number of events that can fire on it, and therefore, event handlers available. We are listening for the click event firing, by setting the onclick event handler property to equal a function containing code that generates a random RGB color and sets the <button> background color equal to it.</p>
+<p>This code is run whenever the click event fires on the button element, that is, whenever a user selects it.</p>
+<p>There are many different event handler properties available. Feel free to experiment.</p>
+<p>Try changing btn.onclick to the following different values in turn, and observing the results in the example:</p>
+<ul>
+<li>btn.onfocus and btn.onblur — The color changes when the button is focused and unfocused; try pressing the tab to focus on the button and press the tab again to focus away from the button. These are often used to display information about filling in form fields when they are focused, or displaying an error message if a form field is filled with an incorrect value.</li>
+<li>btn.ondblclick — The color changes only when the button is double-clicked.</li>
+<li>window.onkeypress, window.onkeydown, window.onkeyup — The color changes when a key is pressed on the keyboard. The keypress event refers to a general press (button down and then up), while keydown and keyup refer to just the key down and key up parts of the keystroke, respectively. Note: It doesn't work if you try to register this event handler on the button itself — we've had to register it on the window object, which represents the entire browser window.</li>
+<li>btn.onmouseover and btn.onmouseout — The color changes when the mouse pointer hovers over the button, or when the pointer moves off the button, respectively.</li>
+</ul>
+<p>You can also bind an event handler using the following code:</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code><span class="err">btn.addEventListener(&#39;click&#39;, function);</span>
+</code></pre></div>
+</td></tr></table>
+
+<p>The behavior of addEventListener() is very similar, but allows you to add multiple handlers to the same event or even dynamically remove them. This method takes two arguments, a string of the event, and either a function name to run, or a new anonymous function. It is useful for larger and more complex sites.</p>
                 
               
               
@@ -870,14 +937,14 @@
     </div>
     
       <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/bundle.5f27aba8.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../assets/javascripts/worker/search.27c6a5e6.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
