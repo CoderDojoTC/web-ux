@@ -19,7 +19,6 @@ Here are the three initial "commands that we will use:
 ## Simple Paths with Move, Horizontal, Vertical and Lineto Commands
 
 Here is the path element used to draw a simple square
-
 ```html
 <svg width="100" height="100">
   <path d="M 10,10 H 90 V 90 H 10 L 10,10"
@@ -73,6 +72,8 @@ Here is what it looks like:
 Note that there are a few differences.  We don't just add the center point of the curve.
 We also tell the direction to proceed from the origin (in a diagonal line from 10,10 to 20,20) is one additional point.  The center point of the curve is 100,100 and the final point is 200,10
 
+[Codepen SVG Curve Demo](https://codepen.io/explosion/pen/YGApwd)
+
 ## Sawtooth vs Sine Wave
 A sawtooth wave is a wave that has straight lines that go from a minimum to a maximum.
 ```html
@@ -89,6 +90,8 @@ A sawtooth wave is a wave that has straight lines that go from a minimum to a ma
    stroke="black" fill="none" stroke-width="3"/>
     <path d="M 0,50 L 700,50" fill="none" stroke="silver" stroke-width="1">
 </svg>
+
+https://codepen.io/dtab428/pen/OWoWEp
 
 Here is the same wave using curves:
 

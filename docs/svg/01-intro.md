@@ -4,13 +4,14 @@
 
 1. Getting Started
 2. HTML Template for testing SVG
-3. SVG Circle
-4. SVG Line
-5. SVG Rectangle
-6. SVG Ellipse
-7. SVG Polygon - used to create hexagons, octagons and stars
+3. Basic shapes
+    1. SVG Circle
+    2. SVG Line
+    3. SVG Rectangle
+    4. SVG Ellipse
+    5. SVG Polygon - used to create hexagons, octagons and stars
 8. SVG Polyline
-9. SVG Path
+9. SVG Paths
 10. SVG Text
 11. SVG Text Effects
 12. SVG Gradients
