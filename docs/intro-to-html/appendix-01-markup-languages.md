@@ -15,12 +15,13 @@ If you have ever changed a font size, or made a font bold, you have used a *mark
 - Fonts
   - Font family
   - Font size, color
-  - Bold, underline, italic
+  - **Bold**, __underline__, *italic*
+  - `Code formatting`
 - Tables
 - Lists
 - Buttons
 - Forms
-- Hyperlinks
+- [Hyperlinks](/#)
 
 ## Markup Examples
 
@@ -65,4 +66,3 @@ but <em>not</em> the closely related screamers.
 | Sue    | 20  |
 
 -----------
-
