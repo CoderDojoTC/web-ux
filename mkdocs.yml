@@ -40,6 +40,15 @@ nav:
     - Polygon: svg/06-polygon.md
     - Polyline: svg/07-polyline.md
     - Path: svg/08-path.md
+  - Introduction to Bootstrap:
+    - Introduction: intro-to-bootstrap/01-intro.md
+    - Getting Started: intro-to-bootstrap/02-getting-started.md
+    - Containers: intro-to-bootstrap/03-containers.md
+    - Grids: intro-to-bootstrap/04-intro-to-grids.md
+    - Typography: intro-to-bootstrap/05-typography.md
+    - Buttons: intro-to-bootstrap/06-buttons.md
+    - Forms: intro-to-bootstrap/07-forms.md
+    - Modals: intro-to-bootstrap/08-modals.md
   - Learning Objectives: learning-objectives.md
   - Resources: resources.md
   - Contact: contact.md
