@@ -1,4 +1,4 @@
-# CSS Lab 6
+# CSS Combining CSS Selectors
 
 This lab covers combining CSS selectors. 
 

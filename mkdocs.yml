@@ -15,14 +15,14 @@ nav:
     - Forms: intro-to-html/09-forms.md
   - Introduction to CSS:
     - Introduction: css/00-intro.md
-    - Lab 1: css/01-lab.md
-    - Lab 2: css/02-lab.md
-    - Lab 3: css/03-lab.md
-    - Lab 4: css/04-lab.md
-    - Lab 5: css/05-lab.md
-    - Lab 6: css/06-lab.md
-    - Lab 7: css/07-lab.md
-    - Lab 8: css/08-lab.md
+    - Font Color: css/01-font-color.md
+    - Key Idea- Applying Style: css/02-applies-style-to-indicated-elements.md
+    - Font and Font Families: css/03-font-and-font-families.md
+    - Styling by Class: css/04-styling-by-class.md
+    - CSS Selectors: css/05-css-selectors.md
+    - Combining CSS Selectors: css/06-combining-css-selectors.md
+    - Styling based on State: css/07-styling-based-on-state.md
+    - Types of CSS: css/08-types-of-css.md
   - Introduction to Javascript:
     - Introduction: intro-to-javascript/01-introduction.md
     - Variables: intro-to-javascript/02-variables.md

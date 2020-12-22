@@ -1,8 +1,8 @@
-# CSS Lab 8
+# CSS External vs Internal vs Inline CSS
 
-This lab covers External vs Inline CSS. 
+This lab covers External vs Internal vs Inline CSS. 
 
-So far, the CSS has been listed separately from the HTML. However, you can use a style tag within HTML to specify some CSS. This is called inline CSS.
+So far, the CSS has been listed separately from the HTML (external CSS). However, you can use a style tag within HTML to specify some CSS. This is called internal CSS (example below). A final type of CSS is inline CSS which involves setting a style attribute within an HTML tag. Inline CSS only lets you style one element at a time, so it's often not as useful as the other two types.
 
 HTML with CSS in the style tag:
 ```html

@@ -1,5 +1,5 @@
-# CSS Lab 1
-Description of this lab here...
+# CSS Change Font Color
+
 
 Make all the paragraph text blue.
 ```css

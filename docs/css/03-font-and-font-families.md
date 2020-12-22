@@ -1,4 +1,4 @@
-# CSS Lab 3
+# CSS Change Font and Font Families
 
 This lab covers using CSS to change font. 
 

@@ -1,4 +1,4 @@
-# CSS Lab 7
+# CSS Styling based on State
 
 This lab covers styling based on state. 
 

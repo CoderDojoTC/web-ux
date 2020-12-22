@@ -1,4 +1,4 @@
-# CSS Lab 4
+# CSS Styling by Class
 
 This lab covers styling by class. 
 

@@ -1,4 +1,4 @@
-# CSS Lab 2
+# CSS Key Idea of Applying Style to Indicated HTML Elements
 
 This lab covers an introduction to CSS syntax. 
 Prerequisite: HTML tags

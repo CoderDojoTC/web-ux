@@ -1,4 +1,4 @@
-# CSS Lab 5
+# CSS- CSS Selectors
 
 This lab covers CSS selectors. 
 
