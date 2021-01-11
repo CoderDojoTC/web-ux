@@ -3,17 +3,18 @@ nav:
   - CoderDojo TC: https://coderdojotc.github.io/CoderDojoTC/
   - Home: index.md
   - Introduction to UX:
-    - What is UX: 02-what-is-ux.md
-    - User Research: 03-user-research.md
-    - Personas: 04-personas.md
-    - Information Architecture: 05-information-architecture.md
-    - Wireframing.md: 06-wireframing.md
-    - Design Thinking: 07-design-thinking.md
-    - Sketching: 08-sketching.md
-    - User Interface Design: 09-user-interface-design.md
-    - Web Design: 10-web-design.md
-    - Mobile Design: 11-mobile-design.md
-    - Voice Design: 12-voice-design.md
+    - Introduction: ux/01-intro.md
+    - What is UX: ux/02-what-is-ux.md
+    - User Research: ux/03-user-research.md
+    - Personas: ux/04-personas.md
+    - Information Architecture: ux/05-information-architecture.md
+    - Wireframing.md: ux/06-wireframing.md
+    - Design Thinking: ux/07-design-thinking.md
+    - Sketching: ux/08-sketching.md
+    - User Interface Design: ux/09-user-interface-design.md
+    - Web Design: ux/10-web-design.md
+    - Mobile Design: ux/11-mobile-design.md
+    - Voice Design: ux/12-voice-design.md
   - Intoduction to HTML:
     - Introduction: intro-to-html/01-intro.md
     - Elements and Attributes: intro-to-html/01a-elements-and-attributes.md
