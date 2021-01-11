@@ -1,12 +1,33 @@
 # Introduction to User Experience Design (UX)
-The goal of this course is to introduce students to the general concepts of user experience design.  This class has no prerequsites and does not require any knowledge of programming.  It is designed to be taken with the existing CoderDojo courses in HTML, CSS, JavaScript, SVG and Mobile application development.
+The goal of this course is to introduce students to the general concepts of user experience design.  This class has no prerequsites and does not require any knowledge of programming.  It is designed to complement and be taken with the existing CoderDojo courses in HTML, CSS, JavaScript, SVG and Mobile application development.  The UX course complements these courses and we attempt to avoid duplication of this content.
+
+This course typically takes students between 2-4 hours, depending on their prior experiences.
 
 ## Introduction
-What is User Experience Design
+* What is user experience design
+* Objective evaluation of user experience
+* Domains: web, mobile apps, voice
 
 ## User Research
+* How do we evaluate the success of user interfaces?
+* A/B testing.
 
-##
+## Personas
+Personas are archetypical users whose goals and characteristics represent the needs of a larger group of users.
+
+## Information Architecture
+
+## Wireframing
+
+## Design Thinking
+
+## Skteching
+
+## User Interface Design
+
+## Web Design
+
+## Mobile Application Design
 
 
 

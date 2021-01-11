@@ -2,9 +2,6 @@
 
 ## What is Information Architecture
 
-
-
-
 ## GPT-3
 
 ### GPT-3 Prompt
